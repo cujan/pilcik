@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="pilcik">
+</Property><Property Name="Solution File" Value="D:\evidencia SPZ\pilcik prerobena\pilcik.sln">
+</Property><Property Name="User Options File" Value="D:\evidencia SPZ\pilcik prerobena\pilcik.suo">
+</Property><Property Name="Date" Value="10. septembra 2011">
+</Property><Property Name="Time" Value="11:31">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="pilcik.sln" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik.sln">
+</Event><Event ErrorLevel="0" Project="" Source="pilcik.suo" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik.suo">
+</Event><Event ErrorLevel="4" Project="pilcik" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik.vbproj" Description="Project file successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik.vbproj">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik.vbproj.user" Description="Project user file successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik.vbproj.user">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\ApplicationEvents.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\ApplicationEvents.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clenovia_kurzu.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clenovia_kurzu.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clenovia_kurzu.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clenovia_kurzu.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clen_kurzu_pridaj.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clen_kurzu_pridaj.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clen_kurzu_pridaj.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clen_kurzu_pridaj.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kniznica.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kniznica.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_detail.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_detail.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_detail.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_detail.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_novy.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_novy.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_novy.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_novy.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\mail.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\mail.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\mail.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\mail.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_detail.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_detail.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_detail.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_detail.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_pridaj.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_pridaj.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_pridaj.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_pridaj.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_dbDataSet1.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_dbDataSet1.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pomocny.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pomocny.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pomocny.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pomocny.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skoncena_platnost_osoba.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skoncena_platnost_osoba.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skoncena_platnost_osoba.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skoncena_platnost_osoba.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skusobna_komisia.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skusobna_komisia.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skusobna_komisia.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skusobna_komisia.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tlacove_zostavy.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tlacove_zostavy.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tlacove_zostavy.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tlacove_zostavy.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_pila.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_pila.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_pila.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_pila.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\hlavna_aplikacia.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\hlavna_aplikacia.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\hlavna_aplikacia.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\hlavna_aplikacia.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\AssemblyInfo.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Application.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Resources.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Settings.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_lkt.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_lkt.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_lkt.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_lkt.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\uvodna_obrazovka.Designer.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\uvodna_obrazovka.Designer.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\uvodna_obrazovka.vb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\uvodna_obrazovka.vb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\app.config" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\app.config">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\app.manifest" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\app.manifest">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Application.myapp" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Settings.settings" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_dbDataSet1.xsc" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_dbDataSet1.xsc">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_dbDataSet1.xsd" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_dbDataSet1.xsd">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_dbDataSet1.xss" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_dbDataSet1.xss">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_TemporaryKey.pfx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pila.ico" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pila.ico">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik_db.accdb" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pilcik_db.accdb">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clenovia_kurzu.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clenovia_kurzu.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\clen_kurzu_pridaj.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\clen_kurzu_pridaj.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_detail.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_detail.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\kurz_novy.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\kurz_novy.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\mail.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\mail.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_detail.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_detail.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\osoba_pridaj.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\osoba_pridaj.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pomocny.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\pomocny.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\protokol_lkt_Report.rdlc" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\protokol_lkt_Report.rdlc">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\protokol_Report.rdlc" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\protokol_Report.rdlc">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skoncena_platnost_osoba.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skoncena_platnost_osoba.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\skusobna_komisia.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\skusobna_komisia.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tlacove_zostavy.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tlacove_zostavy.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_pila.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_pila.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\hlavna_aplikacia.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\hlavna_aplikacia.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\My Project\Resources.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\tz_protokol_lkt.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\tz_protokol_lkt.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\uvodna_obrazovka.resx" Description="File successfully backed up as D:\evidencia SPZ\pilcik prerobena\Backup\pilcik\uvodna_obrazovka.resx">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="pilcik" Source="pilcik\pilcik.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="pilcik.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="pilcik.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="pilcik" Source="pilcik\pilcik.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

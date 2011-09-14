@@ -1,0 +1,188 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+pilcik
+</name>
+</assembly>
+<members>
+<member name="P:pilcik.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:pilcik.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:pilcik.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.clenovia_kurzuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurzDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.miesto_konaniaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.nazov_kurzuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.skusobna_komisiaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.vseobecne_udajeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.clenovia_kurzuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurzRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.miesto_konaniaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.nazov_kurzuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.skusobna_komisiaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.vseobecne_udajeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.clenovia_kurzuRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurzRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.miesto_konaniaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.nazov_kurzuRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.skusobna_komisiaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.vseobecne_udajeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.c_typ_kurzuTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.clenovia_kurzuTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.kurzTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.miesto_konaniaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.nazov_kurzuTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.osobaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.skusobna_komisiaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.vseobecne_udajeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(pilcik.pilcik_dbDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(pilcik.pilcik_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(pilcik.pilcik_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.UpdateAll(pilcik.pilcik_dbDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
