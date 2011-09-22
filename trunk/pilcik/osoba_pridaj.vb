@@ -106,9 +106,9 @@
         Dim priezvisko As String = Label4.Text
         If Label4.Text <> "" Then
             If MsgBox("Naozaj chcete zmazať vybraného člena - " + priezvisko + "? Zmaže sa aj ako účastník všetkých kurzov!!!", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
-                Dim con As New SqlCeConnection(pripojovaci_retazec)
-                Dim com As New SqlCeCommand("DELETE FROM osoba WHERE id = @id", con)
-                Dim com1 As New SqlCeCommand("DELETE FROM clenovia_kurzu WHERE clen_id = @id", con)
+                Dim con As New OleDbConnection(pripojovaci_retazec)
+                Dim com As New OleDbCommand("DELETE FROM osoba WHERE id = @id", con)
+                Dim com1 As New OleDbCommand("DELETE FROM clenovia_kurzu WHERE clen_id = @id", con)
                 com.Parameters.AddWithValue("id", Label2.Text)
                 com1.Parameters.AddWithValue("id", Label2.Text)
                 con.Open()
