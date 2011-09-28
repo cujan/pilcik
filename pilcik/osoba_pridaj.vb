@@ -15,7 +15,7 @@
         
         Me.WindowState = FormWindowState.Maximized
         Me.BringToFront()
-        'Me.OsobaDataGridView.CurrentCell = Nothing
+        Me.OsobaDataGridView.CurrentCell = Nothing
         Label5.BringToFront()
 
     End Sub
@@ -69,6 +69,7 @@
             com.ExecuteNonQuery()
             con.Close()
             Me.OsobaTableAdapter.Fill(Me.Pilcik_dbDataSet.osoba)
+            Me.OsobaDataGridView.CurrentCell = Nothing
 
             'vymazanie udajov z policok
             Titul_predTextBox.Text = ""
@@ -115,7 +116,8 @@
                 com.ExecuteNonQuery()
                 com1.ExecuteNonQuery()
                 con.Close()
-
+                Me.OsobaTableAdapter.Fill(Me.Pilcik_dbDataSet.osoba)
+                Me.OsobaDataGridView.CurrentCell = Nothing
             End If
         Else
             MsgBox("Nemáte vybraného žiadneho člena.")
