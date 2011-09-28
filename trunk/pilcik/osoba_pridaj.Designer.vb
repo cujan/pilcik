@@ -548,7 +548,7 @@ Partial Class osoba_pridaj
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.c_typ_kurzuTableAdapter = Nothing
         Me.TableAdapterManager.clenovia_kurzuTableAdapter = Nothing
-        Me.TableAdapterManager.kurzTableAdapter = Nothing
+
         Me.TableAdapterManager.miesto_konaniaTableAdapter = Nothing
         Me.TableAdapterManager.nazov_kurzuTableAdapter = Nothing
         Me.TableAdapterManager.osobaTableAdapter = Me.OsobaTableAdapter

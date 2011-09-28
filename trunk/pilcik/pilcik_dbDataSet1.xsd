@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="c_typ_kurzuTableAdapter" GeneratorDataComponentClassName="c_typ_kurzuTableAdapter" Name="c_typ_kurzu" UserDataComponentName="c_typ_kurzuTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="c_typ_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="c_typ_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `c_typ_kurzu` WHERE ((`ID` = ?) AND ((? = 1 AND `nazov` IS NULL) OR (`nazov` = ?)))</CommandText>
@@ -55,7 +55,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clenovia_kurzuTableAdapter" GeneratorDataComponentClassName="clenovia_kurzuTableAdapter" Name="clenovia_kurzu" UserDataComponentName="clenovia_kurzuTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="clenovia_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="clenovia_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `clenovia_kurzu` WHERE ((`ID` = ?) AND ((? = 1 AND `kurz_id` IS NULL) OR (`kurz_id` = ?)) AND ((? = 1 AND `clen_id` IS NULL) OR (`clen_id` = ?)))</CommandText>
@@ -108,88 +108,34 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="kurzTableAdapter" GeneratorDataComponentClassName="kurzTableAdapter" Name="kurz" UserDataComponentName="kurzTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="kurz" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `kurz` WHERE ((`id` = ?) AND ((? = 1 AND `nazov` IS NULL) OR (`nazov` = ?)) AND ((? = 1 AND `zaciatok_kurzu` IS NULL) OR (`zaciatok_kurzu` = ?)) AND ((? = 1 AND `koniec_kurzu` IS NULL) OR (`koniec_kurzu` = ?)) AND ((? = 1 AND `typ` IS NULL) OR (`typ` = ?)) AND ((? = 1 AND `miesto_konania` IS NULL) OR (`miesto_konania` = ?)) AND ((? = 1 AND `cislo_protokolu` IS NULL) OR (`cislo_protokolu` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_zaciatok_kurzu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_zaciatok_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_koniec_kurzu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_koniec_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_protokolu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_protokolu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `kurz` (`nazov`, `zaciatok_kurzu`, `koniec_kurzu`, `typ`, `miesto_konania`, `cislo_protokolu`) VALUES (?, ?, ?, ?, ?, ?)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="zaciatok_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="koniec_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_protokolu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT id, nazov, zaciatok_kurzu, koniec_kurzu, typ, miesto_konania, cislo_protokolu FROM kurz</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     kurz.id, nazov_kurzu.nazov AS [nazov kurzu], kurz.zaciatok_kurzu, kurz.koniec_kurzu, kurz.cislo_protokolu, miesto_konania.miesto_konania, 
+                      c_typ_kurzu.nazov AS typ_kurzu
+FROM         (((kurz INNER JOIN
+                      miesto_konania ON kurz.miesto_konania = miesto_konania.ID) INNER JOIN
+                      c_typ_kurzu ON kurz.typ = c_typ_kurzu.ID) INNER JOIN
+                      nazov_kurzu ON kurz.nazov = nazov_kurzu.ID)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `kurz` SET `nazov` = ?, `zaciatok_kurzu` = ?, `koniec_kurzu` = ?, `typ` = ?, `miesto_konania` = ?, `cislo_protokolu` = ? WHERE ((`id` = ?) AND ((? = 1 AND `nazov` IS NULL) OR (`nazov` = ?)) AND ((? = 1 AND `zaciatok_kurzu` IS NULL) OR (`zaciatok_kurzu` = ?)) AND ((? = 1 AND `koniec_kurzu` IS NULL) OR (`koniec_kurzu` = ?)) AND ((? = 1 AND `typ` IS NULL) OR (`typ` = ?)) AND ((? = 1 AND `miesto_konania` IS NULL) OR (`miesto_konania` = ?)) AND ((? = 1 AND `cislo_protokolu` IS NULL) OR (`cislo_protokolu` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="zaciatok_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="koniec_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_protokolu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_nazov" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="nazov" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_zaciatok_kurzu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_zaciatok_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="zaciatok_kurzu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_koniec_kurzu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_koniec_kurzu" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="koniec_kurzu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_typ" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="typ" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_miesto_konania" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="miesto_konania" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_protokolu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_protokolu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_protokolu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
               </DbSource>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="id" DataSetColumn="id" />
-              <Mapping SourceColumn="nazov" DataSetColumn="nazov" />
               <Mapping SourceColumn="zaciatok_kurzu" DataSetColumn="zaciatok_kurzu" />
               <Mapping SourceColumn="koniec_kurzu" DataSetColumn="koniec_kurzu" />
-              <Mapping SourceColumn="typ" DataSetColumn="typ" />
-              <Mapping SourceColumn="miesto_konania" DataSetColumn="miesto_konania" />
               <Mapping SourceColumn="cislo_protokolu" DataSetColumn="cislo_protokolu" />
+              <Mapping SourceColumn="nazov kurzu" DataSetColumn="nazov kurzu" />
+              <Mapping SourceColumn="miesto_konania" DataSetColumn="miesto_konania" />
+              <Mapping SourceColumn="typ_kurzu" DataSetColumn="typ_kurzu" />
             </Mappings>
             <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="miesto_konaniaTableAdapter" GeneratorDataComponentClassName="miesto_konaniaTableAdapter" Name="miesto_konania" UserDataComponentName="miesto_konaniaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="miesto_konania" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="miesto_konania" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `miesto_konania` WHERE (((? = 1 AND `miesto_konania` IS NULL) OR (`miesto_konania` = ?)) AND (`ID` = ?))</CommandText>
@@ -235,7 +181,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nazov_kurzuTableAdapter" GeneratorDataComponentClassName="nazov_kurzuTableAdapter" Name="nazov_kurzu" UserDataComponentName="nazov_kurzuTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="nazov_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="nazov_kurzu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `nazov_kurzu` WHERE (((? = 1 AND `nazov` IS NULL) OR (`nazov` = ?)) AND (`ID` = ?))</CommandText>
@@ -279,147 +225,9 @@
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="osobaTableAdapter" GeneratorDataComponentClassName="osobaTableAdapter" Name="osoba" UserDataComponentName="osobaTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="osoba" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `osoba` WHERE ((`id` = ?) AND ((? = 1 AND `titul_pred` IS NULL) OR (`titul_pred` = ?)) AND ((? = 1 AND `priezvisko` IS NULL) OR (`priezvisko` = ?)) AND ((? = 1 AND `meno` IS NULL) OR (`meno` = ?)) AND ((? = 1 AND `datum_narodenia` IS NULL) OR (`datum_narodenia` = ?)) AND ((? = 1 AND `rodne_cislo` IS NULL) OR (`rodne_cislo` = ?)) AND ((? = 1 AND `cislo_op` IS NULL) OR (`cislo_op` = ?)) AND ((? = 1 AND `ulica` IS NULL) OR (`ulica` = ?)) AND ((? = 1 AND `mesto` IS NULL) OR (`mesto` = ?)) AND ((? = 1 AND `psc` IS NULL) OR (`psc` = ?)) AND ((? = 1 AND `cislo_pilcickeho_preukazu` IS NULL) OR (`cislo_pilcickeho_preukazu` = ?)) AND ((? = 1 AND `email` IS NULL) OR (`email` = ?)) AND ((? = 1 AND `telefon` IS NULL) OR (`telefon` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_titul_pred" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_priezvisko" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_meno" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_datum_narodenia" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_rodne_cislo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_op" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ulica" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_mesto" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_psc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_pilcickeho_preukazu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_email" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_telefon" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `osoba` (`id`, `titul_pred`, `priezvisko`, `meno`, `datum_narodenia`, `rodne_cislo`, `cislo_op`, `ulica`, `mesto`, `psc`, `cislo_pilcickeho_preukazu`, `email`, `telefon`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT id, titul_pred, priezvisko, meno, datum_narodenia, rodne_cislo, cislo_op, ulica, mesto, psc, cislo_pilcickeho_preukazu, email, telefon FROM osoba</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `osoba` SET `id` = ?, `titul_pred` = ?, `priezvisko` = ?, `meno` = ?, `datum_narodenia` = ?, `rodne_cislo` = ?, `cislo_op` = ?, `ulica` = ?, `mesto` = ?, `psc` = ?, `cislo_pilcickeho_preukazu` = ?, `email` = ?, `telefon` = ? WHERE ((`id` = ?) AND ((? = 1 AND `titul_pred` IS NULL) OR (`titul_pred` = ?)) AND ((? = 1 AND `priezvisko` IS NULL) OR (`priezvisko` = ?)) AND ((? = 1 AND `meno` IS NULL) OR (`meno` = ?)) AND ((? = 1 AND `datum_narodenia` IS NULL) OR (`datum_narodenia` = ?)) AND ((? = 1 AND `rodne_cislo` IS NULL) OR (`rodne_cislo` = ?)) AND ((? = 1 AND `cislo_op` IS NULL) OR (`cislo_op` = ?)) AND ((? = 1 AND `ulica` IS NULL) OR (`ulica` = ?)) AND ((? = 1 AND `mesto` IS NULL) OR (`mesto` = ?)) AND ((? = 1 AND `psc` IS NULL) OR (`psc` = ?)) AND ((? = 1 AND `cislo_pilcickeho_preukazu` IS NULL) OR (`cislo_pilcickeho_preukazu` = ?)) AND ((? = 1 AND `email` IS NULL) OR (`email` = ?)) AND ((? = 1 AND `telefon` IS NULL) OR (`telefon` = ?)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_titul_pred" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_priezvisko" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_meno" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_datum_narodenia" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_rodne_cislo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_op" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ulica" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_mesto" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_psc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_pilcickeho_preukazu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_email" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_telefon" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="id" DataSetColumn="id" />
-              <Mapping SourceColumn="titul_pred" DataSetColumn="titul_pred" />
-              <Mapping SourceColumn="priezvisko" DataSetColumn="priezvisko" />
-              <Mapping SourceColumn="meno" DataSetColumn="meno" />
-              <Mapping SourceColumn="datum_narodenia" DataSetColumn="datum_narodenia" />
-              <Mapping SourceColumn="rodne_cislo" DataSetColumn="rodne_cislo" />
-              <Mapping SourceColumn="cislo_op" DataSetColumn="cislo_op" />
-              <Mapping SourceColumn="ulica" DataSetColumn="ulica" />
-              <Mapping SourceColumn="mesto" DataSetColumn="mesto" />
-              <Mapping SourceColumn="psc" DataSetColumn="psc" />
-              <Mapping SourceColumn="cislo_pilcickeho_preukazu" DataSetColumn="cislo_pilcickeho_preukazu" />
-              <Mapping SourceColumn="email" DataSetColumn="email" />
-              <Mapping SourceColumn="telefon" DataSetColumn="telefon" />
-            </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="osoba" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_priezvisko" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy_priezvisko" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy_priezvisko">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT     id, titul_pred, priezvisko, meno, datum_narodenia, rodne_cislo, cislo_op, ulica, mesto, psc, cislo_pilcickeho_preukazu, email, telefon
-FROM         osoba
-WHERE     (priezvisko LIKE ?)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="priezvisko" DataSourceName="osoba" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
-          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="skusobna_komisiaTableAdapter" GeneratorDataComponentClassName="skusobna_komisiaTableAdapter" Name="skusobna_komisia" UserDataComponentName="skusobna_komisiaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="skusobna_komisia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="skusobna_komisia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `skusobna_komisia` WHERE ((`ID` = ?) AND ((? = 1 AND `predseda` IS NULL) OR (`predseda` = ?)) AND ((? = 1 AND `clen1` IS NULL) OR (`clen1` = ?)) AND ((? = 1 AND `clen2` IS NULL) OR (`clen2` = ?)))</CommandText>
@@ -479,7 +287,7 @@ WHERE     (priezvisko LIKE ?)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vseobecne_udajeTableAdapter" GeneratorDataComponentClassName="vseobecne_udajeTableAdapter" Name="vseobecne_udaje" UserDataComponentName="vseobecne_udajeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="vseobecne_udaje" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="vseobecne_udaje" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `vseobecne_udaje` WHERE ((`ID` = ?) AND ((? = 1 AND `nazov` IS NULL) OR (`nazov` = ?)) AND ((? = 1 AND `ulica` IS NULL) OR (`ulica` = ?)) AND ((? = 1 AND `mesto` IS NULL) OR (`mesto` = ?)) AND ((? = 1 AND `psc` IS NULL) OR (`psc` = ?)) AND ((? = 1 AND `ico` IS NULL) OR (`ico` = ?)) AND ((? = 1 AND `dic` IS NULL) OR (`dic` = ?)) AND ((? = 1 AND `telefon` IS NULL) OR (`telefon` = ?)) AND ((? = 1 AND `fax` IS NULL) OR (`fax` = ?)) AND ((? = 1 AND `email` IS NULL) OR (`email` = ?)) AND ((? = 1 AND `www` IS NULL) OR (`www` = ?)))</CommandText>
@@ -586,19 +394,156 @@ WHERE     (priezvisko LIKE ?)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="osobaTableAdapter" GeneratorDataComponentClassName="osobaTableAdapter" Name="osoba" UserDataComponentName="osobaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="osoba" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `osoba` WHERE ((`id` = ?) AND ((? = 1 AND `titul_pred` IS NULL) OR (`titul_pred` = ?)) AND ((? = 1 AND `priezvisko` IS NULL) OR (`priezvisko` = ?)) AND ((? = 1 AND `meno` IS NULL) OR (`meno` = ?)) AND ((? = 1 AND `datum_narodenia` IS NULL) OR (`datum_narodenia` = ?)) AND ((? = 1 AND `rodne_cislo` IS NULL) OR (`rodne_cislo` = ?)) AND ((? = 1 AND `cislo_op` IS NULL) OR (`cislo_op` = ?)) AND ((? = 1 AND `ulica` IS NULL) OR (`ulica` = ?)) AND ((? = 1 AND `mesto` IS NULL) OR (`mesto` = ?)) AND ((? = 1 AND `psc` IS NULL) OR (`psc` = ?)) AND ((? = 1 AND `cislo_pilcickeho_preukazu` IS NULL) OR (`cislo_pilcickeho_preukazu` = ?)) AND ((? = 1 AND `email` IS NULL) OR (`email` = ?)) AND ((? = 1 AND `telefon` IS NULL) OR (`telefon` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_titul_pred" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_priezvisko" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_meno" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_datum_narodenia" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_rodne_cislo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_op" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ulica" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_mesto" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_psc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_pilcickeho_preukazu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_email" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_telefon" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `osoba` (`titul_pred`, `priezvisko`, `meno`, `datum_narodenia`, `rodne_cislo`, `cislo_op`, `ulica`, `mesto`, `psc`, `cislo_pilcickeho_preukazu`, `email`, `telefon`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, titul_pred, priezvisko, meno, datum_narodenia, rodne_cislo, cislo_op, ulica, mesto, psc, cislo_pilcickeho_preukazu, email, telefon FROM osoba</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `osoba` SET `titul_pred` = ?, `priezvisko` = ?, `meno` = ?, `datum_narodenia` = ?, `rodne_cislo` = ?, `cislo_op` = ?, `ulica` = ?, `mesto` = ?, `psc` = ?, `cislo_pilcickeho_preukazu` = ?, `email` = ?, `telefon` = ? WHERE ((`id` = ?) AND ((? = 1 AND `titul_pred` IS NULL) OR (`titul_pred` = ?)) AND ((? = 1 AND `priezvisko` IS NULL) OR (`priezvisko` = ?)) AND ((? = 1 AND `meno` IS NULL) OR (`meno` = ?)) AND ((? = 1 AND `datum_narodenia` IS NULL) OR (`datum_narodenia` = ?)) AND ((? = 1 AND `rodne_cislo` IS NULL) OR (`rodne_cislo` = ?)) AND ((? = 1 AND `cislo_op` IS NULL) OR (`cislo_op` = ?)) AND ((? = 1 AND `ulica` IS NULL) OR (`ulica` = ?)) AND ((? = 1 AND `mesto` IS NULL) OR (`mesto` = ?)) AND ((? = 1 AND `psc` IS NULL) OR (`psc` = ?)) AND ((? = 1 AND `cislo_pilcickeho_preukazu` IS NULL) OR (`cislo_pilcickeho_preukazu` = ?)) AND ((? = 1 AND `email` IS NULL) OR (`email` = ?)) AND ((? = 1 AND `telefon` IS NULL) OR (`telefon` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_titul_pred" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_titul_pred" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="titul_pred" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_priezvisko" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_priezvisko" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_meno" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_meno" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="meno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_datum_narodenia" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_datum_narodenia" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="datum_narodenia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_rodne_cislo" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_rodne_cislo" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="rodne_cislo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_op" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_op" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_op" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ulica" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ulica" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ulica" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_mesto" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_mesto" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="mesto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_psc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_psc" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="psc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_cislo_pilcickeho_preukazu" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_cislo_pilcickeho_preukazu" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="cislo_pilcickeho_preukazu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_email" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_email" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="email" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_telefon" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_telefon" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="telefon" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="titul_pred" DataSetColumn="titul_pred" />
+              <Mapping SourceColumn="priezvisko" DataSetColumn="priezvisko" />
+              <Mapping SourceColumn="meno" DataSetColumn="meno" />
+              <Mapping SourceColumn="datum_narodenia" DataSetColumn="datum_narodenia" />
+              <Mapping SourceColumn="rodne_cislo" DataSetColumn="rodne_cislo" />
+              <Mapping SourceColumn="cislo_op" DataSetColumn="cislo_op" />
+              <Mapping SourceColumn="ulica" DataSetColumn="ulica" />
+              <Mapping SourceColumn="mesto" DataSetColumn="mesto" />
+              <Mapping SourceColumn="psc" DataSetColumn="psc" />
+              <Mapping SourceColumn="cislo_pilcickeho_preukazu" DataSetColumn="cislo_pilcickeho_preukazu" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="telefon" DataSetColumn="telefon" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="pilcik_dbConnectionString (MySettings)" DbObjectName="osoba" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_priezvisko" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_priezvisko" GeneratorSourceName="FillBy_priezvisko" GetMethodModifier="Public" GetMethodName="GetDataBy_priezvisko" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_priezvisko" UserSourceName="FillBy_priezvisko">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     id, titul_pred, priezvisko, meno, datum_narodenia, rodne_cislo, cislo_op, ulica, mesto, psc, cislo_pilcickeho_preukazu, email, telefon
+FROM         osoba
+WHERE     (priezvisko LIKE ?)
+ORDER BY priezvisko</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="priezvisko" DataSourceName="osoba" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="priezvisko" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="priezvisko" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="pilcik_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="pilcik_dbDataSet" msprop:Generator_DataSetName="pilcik_dbDataSet" msprop:EnableTableAdapterManager="True">
+  <xs:element name="pilcik_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pilcik_dbDataSet" msprop:Generator_UserDSName="pilcik_dbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="c_typ_kurzu" msprop:Generator_UserTableName="c_typ_kurzu" msprop:Generator_RowDeletedName="c_typ_kurzuRowDeleted" msprop:Generator_RowChangedName="c_typ_kurzuRowChanged" msprop:Generator_RowClassName="c_typ_kurzuRow" msprop:Generator_RowChangingName="c_typ_kurzuRowChanging" msprop:Generator_RowEvArgName="c_typ_kurzuRowChangeEvent" msprop:Generator_RowEvHandlerName="c_typ_kurzuRowChangeEventHandler" msprop:Generator_TableClassName="c_typ_kurzuDataTable" msprop:Generator_TableVarName="tablec_typ_kurzu" msprop:Generator_RowDeletingName="c_typ_kurzuRowDeleting" msprop:Generator_TablePropName="c_typ_kurzu">
+        <xs:element name="c_typ_kurzu" msprop:Generator_UserTableName="c_typ_kurzu" msprop:Generator_RowEvArgName="c_typ_kurzuRowChangeEvent" msprop:Generator_TableVarName="tablec_typ_kurzu" msprop:Generator_TablePropName="c_typ_kurzu" msprop:Generator_RowDeletingName="c_typ_kurzuRowDeleting" msprop:Generator_RowChangingName="c_typ_kurzuRowChanging" msprop:Generator_RowDeletedName="c_typ_kurzuRowDeleted" msprop:Generator_RowEvHandlerName="c_typ_kurzuRowChangeEventHandler" msprop:Generator_RowChangedName="c_typ_kurzuRowChanged" msprop:Generator_TableClassName="c_typ_kurzuDataTable" msprop:Generator_RowClassName="c_typ_kurzuRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="nazov" msprop:Generator_UserColumnName="nazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" msprop:Generator_UserColumnName="nazov" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -608,138 +553,43 @@ WHERE     (priezvisko LIKE ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="clenovia_kurzu" msprop:Generator_UserTableName="clenovia_kurzu" msprop:Generator_RowDeletedName="clenovia_kurzuRowDeleted" msprop:Generator_RowChangedName="clenovia_kurzuRowChanged" msprop:Generator_RowClassName="clenovia_kurzuRow" msprop:Generator_RowChangingName="clenovia_kurzuRowChanging" msprop:Generator_RowEvArgName="clenovia_kurzuRowChangeEvent" msprop:Generator_RowEvHandlerName="clenovia_kurzuRowChangeEventHandler" msprop:Generator_TableClassName="clenovia_kurzuDataTable" msprop:Generator_TableVarName="tableclenovia_kurzu" msprop:Generator_RowDeletingName="clenovia_kurzuRowDeleting" msprop:Generator_TablePropName="clenovia_kurzu">
+        <xs:element name="clenovia_kurzu" msprop:Generator_UserTableName="clenovia_kurzu" msprop:Generator_RowEvArgName="clenovia_kurzuRowChangeEvent" msprop:Generator_TableVarName="tableclenovia_kurzu" msprop:Generator_TablePropName="clenovia_kurzu" msprop:Generator_RowDeletingName="clenovia_kurzuRowDeleting" msprop:Generator_RowChangingName="clenovia_kurzuRowChanging" msprop:Generator_RowDeletedName="clenovia_kurzuRowDeleted" msprop:Generator_RowEvHandlerName="clenovia_kurzuRowChangeEventHandler" msprop:Generator_RowChangedName="clenovia_kurzuRowChanged" msprop:Generator_TableClassName="clenovia_kurzuDataTable" msprop:Generator_RowClassName="clenovia_kurzuRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="kurz_id" msprop:Generator_UserColumnName="kurz_id" msprop:Generator_ColumnPropNameInRow="kurz_id" msprop:Generator_ColumnVarNameInTable="columnkurz_id" msprop:Generator_ColumnPropNameInTable="kurz_idColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="clen_id" msprop:Generator_UserColumnName="clen_id" msprop:Generator_ColumnPropNameInRow="clen_id" msprop:Generator_ColumnVarNameInTable="columnclen_id" msprop:Generator_ColumnPropNameInTable="clen_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="kurz_id" msprop:Generator_ColumnVarNameInTable="columnkurz_id" msprop:Generator_ColumnPropNameInRow="kurz_id" msprop:Generator_ColumnPropNameInTable="kurz_idColumn" msprop:Generator_UserColumnName="kurz_id" type="xs:int" minOccurs="0" />
+              <xs:element name="clen_id" msprop:Generator_ColumnVarNameInTable="columnclen_id" msprop:Generator_ColumnPropNameInRow="clen_id" msprop:Generator_ColumnPropNameInTable="clen_idColumn" msprop:Generator_UserColumnName="clen_id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="kurz" msprop:Generator_UserTableName="kurz" msprop:Generator_RowDeletedName="kurzRowDeleted" msprop:Generator_RowChangedName="kurzRowChanged" msprop:Generator_RowClassName="kurzRow" msprop:Generator_RowChangingName="kurzRowChanging" msprop:Generator_RowEvArgName="kurzRowChangeEvent" msprop:Generator_RowEvHandlerName="kurzRowChangeEventHandler" msprop:Generator_TableClassName="kurzDataTable" msprop:Generator_TableVarName="tablekurz" msprop:Generator_RowDeletingName="kurzRowDeleting" msprop:Generator_TablePropName="kurz">
+        <xs:element name="kurz" msprop:Generator_UserTableName="kurz" msprop:Generator_RowEvArgName="kurzRowChangeEvent" msprop:Generator_TableVarName="tablekurz" msprop:Generator_TablePropName="kurz" msprop:Generator_RowDeletingName="kurzRowDeleting" msprop:Generator_RowChangingName="kurzRowChanging" msprop:Generator_RowDeletedName="kurzRowDeleted" msprop:Generator_RowEvHandlerName="kurzRowChangeEventHandler" msprop:Generator_RowChangedName="kurzRowChanged" msprop:Generator_TableClassName="kurzDataTable" msprop:Generator_RowClassName="kurzRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:int" />
-              <xs:element name="nazov" msprop:Generator_UserColumnName="nazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="zaciatok_kurzu" msprop:Generator_UserColumnName="zaciatok_kurzu" msprop:Generator_ColumnPropNameInRow="zaciatok_kurzu" msprop:Generator_ColumnVarNameInTable="columnzaciatok_kurzu" msprop:Generator_ColumnPropNameInTable="zaciatok_kurzuColumn" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="koniec_kurzu" msprop:Generator_UserColumnName="koniec_kurzu" msprop:Generator_ColumnPropNameInRow="koniec_kurzu" msprop:Generator_ColumnVarNameInTable="columnkoniec_kurzu" msprop:Generator_ColumnPropNameInTable="koniec_kurzuColumn" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="typ" msprop:Generator_UserColumnName="typ" msprop:Generator_ColumnPropNameInRow="typ" msprop:Generator_ColumnVarNameInTable="columntyp" msprop:Generator_ColumnPropNameInTable="typColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="miesto_konania" msprop:Generator_UserColumnName="miesto_konania" msprop:Generator_ColumnPropNameInRow="miesto_konania" msprop:Generator_ColumnVarNameInTable="columnmiesto_konania" msprop:Generator_ColumnPropNameInTable="miesto_konaniaColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="cislo_protokolu" msprop:Generator_UserColumnName="cislo_protokolu" msprop:Generator_ColumnPropNameInRow="cislo_protokolu" msprop:Generator_ColumnVarNameInTable="columncislo_protokolu" msprop:Generator_ColumnPropNameInTable="cislo_protokoluColumn" minOccurs="0">
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="zaciatok_kurzu" msprop:Generator_ColumnVarNameInTable="columnzaciatok_kurzu" msprop:Generator_ColumnPropNameInRow="zaciatok_kurzu" msprop:Generator_ColumnPropNameInTable="zaciatok_kurzuColumn" msprop:Generator_UserColumnName="zaciatok_kurzu" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="koniec_kurzu" msprop:Generator_ColumnVarNameInTable="columnkoniec_kurzu" msprop:Generator_ColumnPropNameInRow="koniec_kurzu" msprop:Generator_ColumnPropNameInTable="koniec_kurzuColumn" msprop:Generator_UserColumnName="koniec_kurzu" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cislo_protokolu" msprop:Generator_ColumnVarNameInTable="columncislo_protokolu" msprop:Generator_ColumnPropNameInRow="cislo_protokolu" msprop:Generator_ColumnPropNameInTable="cislo_protokoluColumn" msprop:Generator_UserColumnName="cislo_protokolu" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="miesto_konania" msprop:Generator_UserTableName="miesto_konania" msprop:Generator_RowDeletedName="miesto_konaniaRowDeleted" msprop:Generator_RowChangedName="miesto_konaniaRowChanged" msprop:Generator_RowClassName="miesto_konaniaRow" msprop:Generator_RowChangingName="miesto_konaniaRowChanging" msprop:Generator_RowEvArgName="miesto_konaniaRowChangeEvent" msprop:Generator_RowEvHandlerName="miesto_konaniaRowChangeEventHandler" msprop:Generator_TableClassName="miesto_konaniaDataTable" msprop:Generator_TableVarName="tablemiesto_konania" msprop:Generator_RowDeletingName="miesto_konaniaRowDeleting" msprop:Generator_TablePropName="miesto_konania">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="miesto_konania" msprop:Generator_UserColumnName="miesto_konania" msprop:Generator_ColumnPropNameInRow="miesto_konania" msprop:Generator_ColumnVarNameInTable="columnmiesto_konania" msprop:Generator_ColumnPropNameInTable="miesto_konaniaColumn" minOccurs="0">
+              <xs:element name="nazov_x0020_kurzu" msprop:Generator_ColumnVarNameInTable="columnnazov_kurzu" msprop:Generator_ColumnPropNameInRow="nazov_kurzu" msprop:Generator_ColumnPropNameInTable="nazov_kurzuColumn" msprop:Generator_UserColumnName="nazov kurzu" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="nazov_kurzu" msprop:Generator_UserTableName="nazov_kurzu" msprop:Generator_RowDeletedName="nazov_kurzuRowDeleted" msprop:Generator_RowChangedName="nazov_kurzuRowChanged" msprop:Generator_RowClassName="nazov_kurzuRow" msprop:Generator_RowChangingName="nazov_kurzuRowChanging" msprop:Generator_RowEvArgName="nazov_kurzuRowChangeEvent" msprop:Generator_RowEvHandlerName="nazov_kurzuRowChangeEventHandler" msprop:Generator_TableClassName="nazov_kurzuDataTable" msprop:Generator_TableVarName="tablenazov_kurzu" msprop:Generator_RowDeletingName="nazov_kurzuRowDeleting" msprop:Generator_TablePropName="nazov_kurzu">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="nazov" msprop:Generator_UserColumnName="nazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" minOccurs="0">
+              <xs:element name="miesto_konania" msprop:Generator_ColumnVarNameInTable="columnmiesto_konania" msprop:Generator_ColumnPropNameInRow="miesto_konania" msprop:Generator_ColumnPropNameInTable="miesto_konaniaColumn" msprop:Generator_UserColumnName="miesto_konania" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="osoba" msprop:Generator_UserTableName="osoba" msprop:Generator_RowDeletedName="osobaRowDeleted" msprop:Generator_RowChangedName="osobaRowChanged" msprop:Generator_RowClassName="osobaRow" msprop:Generator_RowChangingName="osobaRowChanging" msprop:Generator_RowEvArgName="osobaRowChangeEvent" msprop:Generator_RowEvHandlerName="osobaRowChangeEventHandler" msprop:Generator_TableClassName="osobaDataTable" msprop:Generator_TableVarName="tableosoba" msprop:Generator_RowDeletingName="osobaRowDeleting" msprop:Generator_TablePropName="osoba">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:short" />
-              <xs:element name="titul_pred" msprop:Generator_UserColumnName="titul_pred" msprop:Generator_ColumnPropNameInRow="titul_pred" msprop:Generator_ColumnVarNameInTable="columntitul_pred" msprop:Generator_ColumnPropNameInTable="titul_predColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="priezvisko" msprop:Generator_UserColumnName="priezvisko" msprop:Generator_ColumnPropNameInRow="priezvisko" msprop:Generator_ColumnVarNameInTable="columnpriezvisko" msprop:Generator_ColumnPropNameInTable="priezviskoColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="meno" msprop:Generator_UserColumnName="meno" msprop:Generator_ColumnPropNameInRow="meno" msprop:Generator_ColumnVarNameInTable="columnmeno" msprop:Generator_ColumnPropNameInTable="menoColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="datum_narodenia" msprop:Generator_UserColumnName="datum_narodenia" msprop:Generator_ColumnPropNameInRow="datum_narodenia" msprop:Generator_ColumnVarNameInTable="columndatum_narodenia" msprop:Generator_ColumnPropNameInTable="datum_narodeniaColumn" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="rodne_cislo" msprop:Generator_UserColumnName="rodne_cislo" msprop:Generator_ColumnPropNameInRow="rodne_cislo" msprop:Generator_ColumnVarNameInTable="columnrodne_cislo" msprop:Generator_ColumnPropNameInTable="rodne_cisloColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="cislo_op" msprop:Generator_UserColumnName="cislo_op" msprop:Generator_ColumnPropNameInRow="cislo_op" msprop:Generator_ColumnVarNameInTable="columncislo_op" msprop:Generator_ColumnPropNameInTable="cislo_opColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ulica" msprop:Generator_UserColumnName="ulica" msprop:Generator_ColumnPropNameInRow="ulica" msprop:Generator_ColumnVarNameInTable="columnulica" msprop:Generator_ColumnPropNameInTable="ulicaColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="mesto" msprop:Generator_UserColumnName="mesto" msprop:Generator_ColumnPropNameInRow="mesto" msprop:Generator_ColumnVarNameInTable="columnmesto" msprop:Generator_ColumnPropNameInTable="mestoColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="psc" msprop:Generator_UserColumnName="psc" msprop:Generator_ColumnPropNameInRow="psc" msprop:Generator_ColumnVarNameInTable="columnpsc" msprop:Generator_ColumnPropNameInTable="pscColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="cislo_pilcickeho_preukazu" msprop:Generator_UserColumnName="cislo_pilcickeho_preukazu" msprop:Generator_ColumnPropNameInRow="cislo_pilcickeho_preukazu" msprop:Generator_ColumnVarNameInTable="columncislo_pilcickeho_preukazu" msprop:Generator_ColumnPropNameInTable="cislo_pilcickeho_preukazuColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInTable="emailColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="telefon" msprop:Generator_UserColumnName="telefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" minOccurs="0">
+              <xs:element name="typ_kurzu" msprop:Generator_ColumnVarNameInTable="columntyp_kurzu" msprop:Generator_ColumnPropNameInRow="typ_kurzu" msprop:Generator_ColumnPropNameInTable="typ_kurzuColumn" msprop:Generator_UserColumnName="typ_kurzu" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -749,25 +599,53 @@ WHERE     (priezvisko LIKE ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="skusobna_komisia" msprop:Generator_UserTableName="skusobna_komisia" msprop:Generator_RowDeletedName="skusobna_komisiaRowDeleted" msprop:Generator_RowChangedName="skusobna_komisiaRowChanged" msprop:Generator_RowClassName="skusobna_komisiaRow" msprop:Generator_RowChangingName="skusobna_komisiaRowChanging" msprop:Generator_RowEvArgName="skusobna_komisiaRowChangeEvent" msprop:Generator_RowEvHandlerName="skusobna_komisiaRowChangeEventHandler" msprop:Generator_TableClassName="skusobna_komisiaDataTable" msprop:Generator_TableVarName="tableskusobna_komisia" msprop:Generator_RowDeletingName="skusobna_komisiaRowDeleting" msprop:Generator_TablePropName="skusobna_komisia">
+        <xs:element name="miesto_konania" msprop:Generator_UserTableName="miesto_konania" msprop:Generator_RowEvArgName="miesto_konaniaRowChangeEvent" msprop:Generator_TableVarName="tablemiesto_konania" msprop:Generator_TablePropName="miesto_konania" msprop:Generator_RowDeletingName="miesto_konaniaRowDeleting" msprop:Generator_RowChangingName="miesto_konaniaRowChanging" msprop:Generator_RowDeletedName="miesto_konaniaRowDeleted" msprop:Generator_RowEvHandlerName="miesto_konaniaRowChangeEventHandler" msprop:Generator_RowChangedName="miesto_konaniaRowChanged" msprop:Generator_TableClassName="miesto_konaniaDataTable" msprop:Generator_RowClassName="miesto_konaniaRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="predseda" msprop:Generator_UserColumnName="predseda" msprop:Generator_ColumnPropNameInRow="predseda" msprop:Generator_ColumnVarNameInTable="columnpredseda" msprop:Generator_ColumnPropNameInTable="predsedaColumn" minOccurs="0">
+              <xs:element name="miesto_konania" msprop:Generator_ColumnVarNameInTable="columnmiesto_konania" msprop:Generator_ColumnPropNameInRow="miesto_konania" msprop:Generator_ColumnPropNameInTable="miesto_konaniaColumn" msprop:Generator_UserColumnName="miesto_konania" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="clen1" msprop:Generator_UserColumnName="clen1" msprop:Generator_ColumnPropNameInRow="clen1" msprop:Generator_ColumnVarNameInTable="columnclen1" msprop:Generator_ColumnPropNameInTable="clen1Column" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nazov_kurzu" msprop:Generator_UserTableName="nazov_kurzu" msprop:Generator_RowEvArgName="nazov_kurzuRowChangeEvent" msprop:Generator_TableVarName="tablenazov_kurzu" msprop:Generator_TablePropName="nazov_kurzu" msprop:Generator_RowDeletingName="nazov_kurzuRowDeleting" msprop:Generator_RowChangingName="nazov_kurzuRowChanging" msprop:Generator_RowDeletedName="nazov_kurzuRowDeleted" msprop:Generator_RowEvHandlerName="nazov_kurzuRowChangeEventHandler" msprop:Generator_RowChangedName="nazov_kurzuRowChanged" msprop:Generator_TableClassName="nazov_kurzuDataTable" msprop:Generator_RowClassName="nazov_kurzuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" msprop:Generator_UserColumnName="nazov" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="clen2" msprop:Generator_UserColumnName="clen2" msprop:Generator_ColumnPropNameInRow="clen2" msprop:Generator_ColumnVarNameInTable="columnclen2" msprop:Generator_ColumnPropNameInTable="clen2Column" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="skusobna_komisia" msprop:Generator_UserTableName="skusobna_komisia" msprop:Generator_RowEvArgName="skusobna_komisiaRowChangeEvent" msprop:Generator_TableVarName="tableskusobna_komisia" msprop:Generator_TablePropName="skusobna_komisia" msprop:Generator_RowDeletingName="skusobna_komisiaRowDeleting" msprop:Generator_RowChangingName="skusobna_komisiaRowChanging" msprop:Generator_RowDeletedName="skusobna_komisiaRowDeleted" msprop:Generator_RowEvHandlerName="skusobna_komisiaRowChangeEventHandler" msprop:Generator_RowChangedName="skusobna_komisiaRowChanged" msprop:Generator_TableClassName="skusobna_komisiaDataTable" msprop:Generator_RowClassName="skusobna_komisiaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="predseda" msprop:Generator_ColumnVarNameInTable="columnpredseda" msprop:Generator_ColumnPropNameInRow="predseda" msprop:Generator_ColumnPropNameInTable="predsedaColumn" msprop:Generator_UserColumnName="predseda" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="clen1" msprop:Generator_ColumnVarNameInTable="columnclen1" msprop:Generator_ColumnPropNameInRow="clen1" msprop:Generator_ColumnPropNameInTable="clen1Column" msprop:Generator_UserColumnName="clen1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="clen2" msprop:Generator_ColumnVarNameInTable="columnclen2" msprop:Generator_ColumnPropNameInRow="clen2" msprop:Generator_ColumnPropNameInTable="clen2Column" msprop:Generator_UserColumnName="clen2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -777,74 +655,159 @@ WHERE     (priezvisko LIKE ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="vseobecne_udaje" msprop:Generator_UserTableName="vseobecne_udaje" msprop:Generator_RowDeletedName="vseobecne_udajeRowDeleted" msprop:Generator_RowChangedName="vseobecne_udajeRowChanged" msprop:Generator_RowClassName="vseobecne_udajeRow" msprop:Generator_RowChangingName="vseobecne_udajeRowChanging" msprop:Generator_RowEvArgName="vseobecne_udajeRowChangeEvent" msprop:Generator_RowEvHandlerName="vseobecne_udajeRowChangeEventHandler" msprop:Generator_TableClassName="vseobecne_udajeDataTable" msprop:Generator_TableVarName="tablevseobecne_udaje" msprop:Generator_RowDeletingName="vseobecne_udajeRowDeleting" msprop:Generator_TablePropName="vseobecne_udaje">
+        <xs:element name="vseobecne_udaje" msprop:Generator_UserTableName="vseobecne_udaje" msprop:Generator_RowEvArgName="vseobecne_udajeRowChangeEvent" msprop:Generator_TableVarName="tablevseobecne_udaje" msprop:Generator_TablePropName="vseobecne_udaje" msprop:Generator_RowDeletingName="vseobecne_udajeRowDeleting" msprop:Generator_RowChangingName="vseobecne_udajeRowChanging" msprop:Generator_RowDeletedName="vseobecne_udajeRowDeleted" msprop:Generator_RowEvHandlerName="vseobecne_udajeRowChangeEventHandler" msprop:Generator_RowChangedName="vseobecne_udajeRowChanged" msprop:Generator_TableClassName="vseobecne_udajeDataTable" msprop:Generator_RowClassName="vseobecne_udajeRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="nazov" msprop:Generator_UserColumnName="nazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="nazov" msprop:Generator_ColumnVarNameInTable="columnnazov" msprop:Generator_ColumnPropNameInRow="nazov" msprop:Generator_ColumnPropNameInTable="nazovColumn" msprop:Generator_UserColumnName="nazov" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ulica" msprop:Generator_UserColumnName="ulica" msprop:Generator_ColumnPropNameInRow="ulica" msprop:Generator_ColumnVarNameInTable="columnulica" msprop:Generator_ColumnPropNameInTable="ulicaColumn" minOccurs="0">
+              <xs:element name="ulica" msprop:Generator_ColumnVarNameInTable="columnulica" msprop:Generator_ColumnPropNameInRow="ulica" msprop:Generator_ColumnPropNameInTable="ulicaColumn" msprop:Generator_UserColumnName="ulica" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="mesto" msprop:Generator_UserColumnName="mesto" msprop:Generator_ColumnPropNameInRow="mesto" msprop:Generator_ColumnVarNameInTable="columnmesto" msprop:Generator_ColumnPropNameInTable="mestoColumn" minOccurs="0">
+              <xs:element name="mesto" msprop:Generator_ColumnVarNameInTable="columnmesto" msprop:Generator_ColumnPropNameInRow="mesto" msprop:Generator_ColumnPropNameInTable="mestoColumn" msprop:Generator_UserColumnName="mesto" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="psc" msprop:Generator_UserColumnName="psc" msprop:Generator_ColumnPropNameInRow="psc" msprop:Generator_ColumnVarNameInTable="columnpsc" msprop:Generator_ColumnPropNameInTable="pscColumn" minOccurs="0">
+              <xs:element name="psc" msprop:Generator_ColumnVarNameInTable="columnpsc" msprop:Generator_ColumnPropNameInRow="psc" msprop:Generator_ColumnPropNameInTable="pscColumn" msprop:Generator_UserColumnName="psc" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ico" msprop:Generator_UserColumnName="ico" msprop:Generator_ColumnPropNameInRow="ico" msprop:Generator_ColumnVarNameInTable="columnico" msprop:Generator_ColumnPropNameInTable="icoColumn" minOccurs="0">
+              <xs:element name="ico" msprop:Generator_ColumnVarNameInTable="columnico" msprop:Generator_ColumnPropNameInRow="ico" msprop:Generator_ColumnPropNameInTable="icoColumn" msprop:Generator_UserColumnName="ico" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="dic" msprop:Generator_UserColumnName="dic" msprop:Generator_ColumnPropNameInRow="dic" msprop:Generator_ColumnVarNameInTable="columndic" msprop:Generator_ColumnPropNameInTable="dicColumn" minOccurs="0">
+              <xs:element name="dic" msprop:Generator_ColumnVarNameInTable="columndic" msprop:Generator_ColumnPropNameInRow="dic" msprop:Generator_ColumnPropNameInTable="dicColumn" msprop:Generator_UserColumnName="dic" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="telefon" msprop:Generator_UserColumnName="telefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" minOccurs="0">
+              <xs:element name="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" msprop:Generator_UserColumnName="telefon" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInTable="faxColumn" minOccurs="0">
+              <xs:element name="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn" msprop:Generator_UserColumnName="fax" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="email" msprop:Generator_UserColumnName="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInTable="emailColumn" minOccurs="0">
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="www" msprop:Generator_UserColumnName="www" msprop:Generator_ColumnPropNameInRow="www" msprop:Generator_ColumnVarNameInTable="columnwww" msprop:Generator_ColumnPropNameInTable="wwwColumn" minOccurs="0">
+              <xs:element name="www" msprop:Generator_ColumnVarNameInTable="columnwww" msprop:Generator_ColumnPropNameInRow="www" msprop:Generator_ColumnPropNameInTable="wwwColumn" msprop:Generator_UserColumnName="www" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="osoba" msprop:Generator_TableClassName="osobaDataTable" msprop:Generator_TableVarName="tableosoba" msprop:Generator_TablePropName="osoba" msprop:Generator_RowDeletingName="osobaRowDeleting" msprop:Generator_UserTableName="osoba" msprop:Generator_RowChangingName="osobaRowChanging" msprop:Generator_RowEvHandlerName="osobaRowChangeEventHandler" msprop:Generator_RowDeletedName="osobaRowDeleted" msprop:Generator_RowEvArgName="osobaRowChangeEvent" msprop:Generator_RowChangedName="osobaRowChanged" msprop:Generator_RowClassName="osobaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="titul_pred" msprop:Generator_ColumnVarNameInTable="columntitul_pred" msprop:Generator_ColumnPropNameInRow="titul_pred" msprop:Generator_ColumnPropNameInTable="titul_predColumn" msprop:Generator_UserColumnName="titul_pred" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="priezvisko" msprop:Generator_ColumnVarNameInTable="columnpriezvisko" msprop:Generator_ColumnPropNameInRow="priezvisko" msprop:Generator_ColumnPropNameInTable="priezviskoColumn" msprop:Generator_UserColumnName="priezvisko" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="meno" msprop:Generator_ColumnVarNameInTable="columnmeno" msprop:Generator_ColumnPropNameInRow="meno" msprop:Generator_ColumnPropNameInTable="menoColumn" msprop:Generator_UserColumnName="meno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datum_narodenia" msprop:Generator_ColumnVarNameInTable="columndatum_narodenia" msprop:Generator_ColumnPropNameInRow="datum_narodenia" msprop:Generator_ColumnPropNameInTable="datum_narodeniaColumn" msprop:Generator_UserColumnName="datum_narodenia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="rodne_cislo" msprop:Generator_ColumnVarNameInTable="columnrodne_cislo" msprop:Generator_ColumnPropNameInRow="rodne_cislo" msprop:Generator_ColumnPropNameInTable="rodne_cisloColumn" msprop:Generator_UserColumnName="rodne_cislo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cislo_op" msprop:Generator_ColumnVarNameInTable="columncislo_op" msprop:Generator_ColumnPropNameInRow="cislo_op" msprop:Generator_ColumnPropNameInTable="cislo_opColumn" msprop:Generator_UserColumnName="cislo_op" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ulica" msprop:Generator_ColumnVarNameInTable="columnulica" msprop:Generator_ColumnPropNameInRow="ulica" msprop:Generator_ColumnPropNameInTable="ulicaColumn" msprop:Generator_UserColumnName="ulica" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto" msprop:Generator_ColumnVarNameInTable="columnmesto" msprop:Generator_ColumnPropNameInRow="mesto" msprop:Generator_ColumnPropNameInTable="mestoColumn" msprop:Generator_UserColumnName="mesto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="psc" msprop:Generator_ColumnVarNameInTable="columnpsc" msprop:Generator_ColumnPropNameInRow="psc" msprop:Generator_ColumnPropNameInTable="pscColumn" msprop:Generator_UserColumnName="psc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cislo_pilcickeho_preukazu" msprop:Generator_ColumnVarNameInTable="columncislo_pilcickeho_preukazu" msprop:Generator_ColumnPropNameInRow="cislo_pilcickeho_preukazu" msprop:Generator_ColumnPropNameInTable="cislo_pilcickeho_preukazuColumn" msprop:Generator_UserColumnName="cislo_pilcickeho_preukazu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefon" msprop:Generator_ColumnVarNameInTable="columntelefon" msprop:Generator_ColumnPropNameInRow="telefon" msprop:Generator_ColumnPropNameInTable="telefonColumn" msprop:Generator_UserColumnName="telefon" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -876,10 +839,6 @@ WHERE     (priezvisko LIKE ?)</CommandText>
       <xs:selector xpath=".//mstns:nazov_kurzu" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
-    <xs:unique name="osoba_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:osoba" />
-      <xs:field xpath="mstns:id" />
-    </xs:unique>
     <xs:unique name="skusobna_komisia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:skusobna_komisia" />
       <xs:field xpath="mstns:ID" />
@@ -888,12 +847,9 @@ WHERE     (priezvisko LIKE ?)</CommandText>
       <xs:selector xpath=".//mstns:vseobecne_udaje" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
+    <xs:unique name="osoba_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:osoba" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
   </xs:element>
-  <xs:annotation>
-    <xs:appinfo>
-      <msdata:Relationship name="c_typ_kurzukurz" msdata:parent="c_typ_kurzu" msdata:child="kurz" msdata:parentkey="ID" msdata:childkey="typ" msprop:Generator_UserRelationName="c_typ_kurzukurz" msprop:Generator_RelationVarName="relationc_typ_kurzukurz" msprop:Generator_UserChildTable="kurz" msprop:Generator_UserParentTable="c_typ_kurzu" msprop:Generator_ParentPropName="c_typ_kurzuRow" msprop:Generator_ChildPropName="GetkurzRows" />
-      <msdata:Relationship name="miesto_konaniakurz" msdata:parent="miesto_konania" msdata:child="kurz" msdata:parentkey="ID" msdata:childkey="miesto_konania" msprop:Generator_UserRelationName="miesto_konaniakurz" msprop:Generator_RelationVarName="relationmiesto_konaniakurz" msprop:Generator_UserChildTable="kurz" msprop:Generator_UserParentTable="miesto_konania" msprop:Generator_ParentPropName="miesto_konaniaRow" msprop:Generator_ChildPropName="GetkurzRows" />
-      <msdata:Relationship name="nazov_kurzukurz" msdata:parent="nazov_kurzu" msdata:child="kurz" msdata:parentkey="ID" msdata:childkey="nazov" msprop:Generator_UserRelationName="nazov_kurzukurz" msprop:Generator_RelationVarName="relationnazov_kurzukurz" msprop:Generator_UserChildTable="kurz" msprop:Generator_UserParentTable="nazov_kurzu" msprop:Generator_ParentPropName="nazov_kurzuRow" msprop:Generator_ChildPropName="GetkurzRows" />
-    </xs:appinfo>
-  </xs:annotation>
 </xs:schema>

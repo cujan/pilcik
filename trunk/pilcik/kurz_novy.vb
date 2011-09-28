@@ -1,8 +1,7 @@
 ﻿Public Class kurz_novy
 
     Private Sub KurzBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.KurzBindingSource.EndEdit()
+       
 
 
     End Sub
@@ -12,6 +11,14 @@
     End Sub
 
     Private Sub kurz_novy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Pilcik_dbDataSet.miesto_konania' table. You can move, or remove it, as needed.
+        Me.Miesto_konaniaTableAdapter.Fill(Me.Pilcik_dbDataSet.miesto_konania)
+        'TODO: This line of code loads data into the 'Pilcik_dbDataSet.c_typ_kurzu' table. You can move, or remove it, as needed.
+        Me.C_typ_kurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.c_typ_kurzu)
+        'TODO: This line of code loads data into the 'Pilcik_dbDataSet.nazov_kurzu' table. You can move, or remove it, as needed.
+        Me.Nazov_kurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.nazov_kurzu)
+        'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz' table. You can move, or remove it, as needed.
+        Me.KurzTableAdapter.Fill(Me.Pilcik_dbDataSet.kurz)
         'TODO: This line of code loads data into the 'PilcikdbDataSet.c_typ_kurzu' table. You can move, or remove it, as needed.
 
         'TODO: This line of code loads data into the 'Kurz_pocetDataSet.kurz' table. You can move, or remove it, as needed.
@@ -23,17 +30,17 @@
         'Me.KurzDataGridView.CurrentRow.Selected = Nothing
         Me.WindowState = FormWindowState.Maximized
         Me.BringToFront()
-        KurzDataGridView.CurrentCell = Nothing
+        'KurzDataGridView.CurrentCell = Nothing
         Label3.BringToFront()
 
         'generovanie cisla protokolu
         Dim cislo_protokolu As String
 
-        Dim con As New SqlCeConnection(pripojovaci_retazec)
-        Dim com As New SqlCeCommand("SELECT MAX(SUBSTRING(cislo_protokolu, 1, LEN(cislo_protokolu) - 5)) + 1 AS Expr1 FROM kurz WHERE     (DATEPART(year, zaciatok_kurzu) = DATEPART(year, GETDATE()))", con)
+        Dim con As New OleDbConnection(pripojovaci_retazec)
+        'Dim com As New OleDbCommand("SELECT MAX(SUBSTRING(cislo_protokolu, 1, LEN(cislo_protokolu) - 5)) + 1 AS Expr1 FROM kurz WHERE     (DATEPART(year, zaciatok_kurzu) = DATEPART(year, GETDATE()))", con)
 
         con.Open()
-        cislo_protokolu = com.ExecuteScalar
+        'cislo_protokolu = com.ExecuteScalar
         con.Close()
 
         Label7.Text = cislo_protokolu & "/" & DatePart(DateInterval.Year, Date.Today)
@@ -47,14 +54,14 @@
     Private Sub ulozButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ulozButton.Click
 
 
-        If NazovTextBox.Text <> "" And Zaciatok_kurzuDateTimePicker.Checked = True And Koniec_kurzuDateTimePicker.Checked = True And TypComboBox.Text <> "" And Miesto_konaniaTextBox.Text <> "" Then
+        If Zaciatok_kurzuDateTimePicker.Checked = True And Koniec_kurzuDateTimePicker.Checked = True And TypComboBox.Text <> "" Then
 
 
-            Dim con As New SqlCeConnection(pripojovaci_retazec)
-            Dim com As New SqlCeCommand("INSERT INTO kurz (nazov, zaciatok_kurzu, koniec_kurzu, typ, miesto_konania, cislo_protokolu) VALUES (@nazov,@zaciatok_kurzu,@koniec_kurzu,@typ,@miesto_konania, @cislo_protokolu)", con)
+            Dim con As New OleDbConnection(pripojovaci_retazec)
+            Dim com As New OleDbCommand("INSERT INTO kurz (nazov, zaciatok_kurzu, koniec_kurzu, typ, miesto_konania, cislo_protokolu) VALUES (@nazov,@zaciatok_kurzu,@koniec_kurzu,@typ,@miesto_konania, @cislo_protokolu)", con)
 
             With com.Parameters
-                .AddWithValue("nazov", NazovTextBox.Text)
+                .AddWithValue("nazov", NazovComboBox.SelectedValue)
                 If Zaciatok_kurzuDateTimePicker.Checked = True Then
                     .AddWithValue("zaciatok_kurzu", Zaciatok_kurzuDateTimePicker.Value.Date)
                 Else
@@ -66,7 +73,7 @@
                     .AddWithValue("koniec_kurzu", DBNull.Value)
                 End If
                 .AddWithValue("typ", TypComboBox.SelectedValue)
-                .AddWithValue("miesto_konania", Miesto_konaniaTextBox.Text)
+                .AddWithValue("miesto_konania", Miesto_konaniaComboBox.SelectedValue)
                 .AddWithValue("cislo_protokolu", Label7.Text)
             End With
 
@@ -76,7 +83,7 @@
 
 
 
-            NazovTextBox.Text = ""
+            NazovComboBox.SelectedValue = -1
             Zaciatok_kurzuDateTimePicker.Checked = False
             Koniec_kurzuDateTimePicker.Checked = False
             'refresh uvodnej obrazovky
@@ -85,7 +92,7 @@
             Dim cislo_protokolu As String
 
 
-            Dim com1 As New SqlCeCommand("SELECT COUNT(*)  FROM kurz WHERE DATEPART(year, zaciatok_kurzu) = DATEPART(year, GETDATE())", con)
+            Dim com1 As New OleDbCommand("SELECT COUNT(*)  FROM kurz WHERE DATEPART(year, zaciatok_kurzu) = DATEPART(year, DATE())", con)
 
             con.Open()
             cislo_protokolu = com1.ExecuteScalar
@@ -96,10 +103,12 @@
         Else
             MsgBox("Nemáte zadabé všetky údaje")
         End If
+
+
     End Sub
 
     Private Sub KurzDataGridView_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
+        'Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
         Label2.Text = Label1.Text
         Label1.DataBindings.Clear()
     End Sub
@@ -129,7 +138,7 @@
 
     End Sub
 
-    Private Sub Miesto_konaniaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Miesto_konaniaTextBox.TextChanged
+    Private Sub Miesto_konaniaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -137,26 +146,30 @@
         kurz_detail.Show()
     End Sub
 
-    Private Sub KurzDataGridView_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellClick
+    Private Sub KurzDataGridView_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         'id
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
+        'Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
         Label2.Text = Label1.Text
         Label1.DataBindings.Clear()
         'nazov kurzu
-        Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "nazov", True))
+        'Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "nazov", True))
         Label5.Text = Label4.Text
         Label4.DataBindings.Clear()
     End Sub
 
-    Private Sub KurzDataGridView_CellContentClick_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellContentClick
+    Private Sub KurzDataGridView_CellContentClick_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub KurzDataGridView_CellDoubleClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellDoubleClick
+    Private Sub KurzDataGridView_CellDoubleClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         kurz_detail.Show()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         pomocny.Show()
+    End Sub
+
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        MsgBox(Miesto_konaniaComboBox.SelectedValue)
     End Sub
 End Class
