@@ -5,6 +5,8 @@
     End Sub
 
     Private Sub osoba_pridaj_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz_pohlad' table. You can move, or remove it, as needed.
+        Me.Kurz_pohladTableAdapter.Fill(Me.Pilcik_dbDataSet.kurz_pohlad)
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.osoba' table. You can move, or remove it, as needed.
         Me.OsobaTableAdapter.Fill(Me.Pilcik_dbDataSet.osoba)
         Me.MdiParent = hlavna_aplikacia
@@ -70,6 +72,13 @@
             con.Close()
             Me.OsobaTableAdapter.Fill(Me.Pilcik_dbDataSet.osoba)
             Me.OsobaDataGridView.CurrentCell = Nothing
+
+            'zistenie id pridaneho clena
+            Dim con1 As New OleDbConnection(pripojovaci_retazec)
+            Dim com1 As New OleDbCommand("", con1)
+            con1.Open()
+            con1.Close()
+
 
             'vymazanie udajov z policok
             Titul_predTextBox.Text = ""

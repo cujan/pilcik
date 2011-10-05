@@ -63,16 +63,6 @@ Namespace My
                 Return CType(Me("pilcik_dbConnectionString"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\pilcikdb.sdf")>  _
-        Public ReadOnly Property pilcikdbConnectionString() As String
-            Get
-                Return CType(Me("pilcikdbConnectionString"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 
