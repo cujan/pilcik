@@ -77,14 +77,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pilcik.exe" size="512512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pilcik.exe" size="587776">
       <assemblyIdentity name="pilcik" version="1.1.1.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>T1LhGOMOxLEHMsrDWwwXBVVzPtg=</dsig:DigestValue>
+        <dsig:DigestValue>XqXTMnU2JH3ZxPLQY3J45YKHRiw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,13 +97,13 @@
       <dsig:DigestValue>61Cm9aklJ1Il/FhE4CNNy76sy0c=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="pilcik.exe.config" size="1819">
+  <file name="pilcik.exe.config" size="1628">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>aY5S6cIAJgVb0EzOecJmh1ZtkXM=</dsig:DigestValue>
+      <dsig:DigestValue>0H8s24ta/VgXIBc2nvYHmKB1mfg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

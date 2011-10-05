@@ -51,6 +51,18 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_idDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaClenoviaKurzuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_pohladDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -83,6 +95,18 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_idRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaClenoviaKurzuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_pohladRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRowChangeEvent">
 	<summary>
 Row event argument class
@@ -112,6 +136,18 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.osobaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_idRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.osobaClenoviaKurzuRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.kurz_pohladRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -148,6 +184,18 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.osobaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.kurz_idTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.osobaClenoviaKurzuTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

@@ -22,21 +22,23 @@ Partial Class clen_kurzu_pridaj
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.OsobaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Pilcik_dbDataSet = New pilcik.pilcik_dbDataSet()
+        Me.OsobaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OsobaTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.osobaTableAdapter()
         CType(Me.OsobaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-
+        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OsobaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ComboBox1
         '
-        Me.ComboBox1.DataSource = Me.OsobaBindingSource
-        Me.ComboBox1.DisplayMember = "osoba"
+        Me.ComboBox1.DataSource = Me.OsobaBindingSource1
+        Me.ComboBox1.DisplayMember = "priezvisko"
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(80, 34)
         Me.ComboBox1.Name = "ComboBox1"
@@ -47,15 +49,6 @@ Partial Class clen_kurzu_pridaj
         'OsobaBindingSource
         '
         Me.OsobaBindingSource.DataMember = "osoba"
-
-        '
-        'OsobaComboDataSet
-        '
-       
-        '
-        'OsobaTableAdapter
-        '
-
         '
         'Button1
         '
@@ -66,39 +59,33 @@ Partial Class clen_kurzu_pridaj
         Me.Button1.Text = "Pridaj"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Pilcik_dbDataSet
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(32, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Label1"
+        Me.Pilcik_dbDataSet.DataSetName = "pilcik_dbDataSet"
+        Me.Pilcik_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Label2
+        'OsobaBindingSource1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 106)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
+        Me.OsobaBindingSource1.DataMember = "osoba"
+        Me.OsobaBindingSource1.DataSource = Me.Pilcik_dbDataSet
+        '
+        'OsobaTableAdapter
+        '
+        Me.OsobaTableAdapter.ClearBeforeFill = True
         '
         'clen_kurzu_pridaj
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(447, 139)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "clen_kurzu_pridaj"
         Me.Text = "clen_kurzu_pridaj"
         CType(Me.OsobaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-
+        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OsobaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
@@ -106,6 +93,7 @@ Partial Class clen_kurzu_pridaj
     Friend WithEvents OsobaBindingSource As System.Windows.Forms.BindingSource
 
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Pilcik_dbDataSet As pilcik.pilcik_dbDataSet
+    Friend WithEvents OsobaBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents OsobaTableAdapter As pilcik.pilcik_dbDataSetTableAdapters.osobaTableAdapter
 End Class
