@@ -18,7 +18,7 @@
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz_id' table. You can move, or remove it, as needed.
         Me.Kurz_idTableAdapter.FillBy_id(Me.Pilcik_dbDataSet.kurz_id, id_vybrateho_kurzu)
 
-
+        Label4.Text = kurz_novy.Label2.Text
 
         Label1.BringToFront()
         'If TypTextBox.Text = "" Then
@@ -132,24 +132,28 @@
     End Sub
 
     Private Sub ZmazClenaButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ZmazClenaButton.Click
-        If Label2.Text <> "" Then
-            If MsgBox("Naozaj chcete odobrať  vybraného člena z kurzu ?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
-                Dim id_clen As Integer = Label2.Text
-                Dim id_kurz As Integer = id_vybrateho_kurzu
+        'If Label2.Text <> "" Then
+        'If MsgBox("Naozaj chcete odobrať  vybraného člena z kurzu ?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+            Dim id_clen As Integer = Label3.Text
+        Dim id_kurz As Integer = id_vybrateho_kurzu
 
-                Dim con As New OleDbConnection(pripojovaci_retazec)
-                Dim com As New OleDbCommand("DELETE FROM clenovia_kurzu WHERE ((kurz_id = @id_kurz) AND (clen_id = @id_clen))", con)
-                com.Parameters.AddWithValue("id_clen", id_clen)
-                com.Parameters.AddWithValue("id_kurz", id_kurz)
+            Dim con As New OleDbConnection(pripojovaci_retazec)
+        Dim com As New OleDbCommand("DELETE  FROM clenovia_kurzu WHERE kurz_id = @id_kurz AND clen_id = @id_clen", con)
+            com.Parameters.AddWithValue("id_clen", id_clen)
+            com.Parameters.AddWithValue("id_kurz", id_kurz)
 
-                con.Open()
-                com.ExecuteNonQuery()
-                con.Close()
-                Me.OsobaClenoviaKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.osobaClenoviaKurzu, id_vybrateho_kurzu)
+            con.Open()
+            com.ExecuteNonQuery()
+            con.Close()
+            Me.OsobaClenoviaKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.osobaClenoviaKurzu, id_vybrateho_kurzu)
 
-            End If
-        Else
-            MsgBox("Nemáte vybraného žiadneho člena.")
-        End If
+            '        End If
+            'Else
+            'MsgBox("Nemáte vybraného žiadneho člena.")
+            'End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        MsgBox(id_vybrateho_kurzu)
     End Sub
 End Class
