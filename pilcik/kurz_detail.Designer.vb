@@ -36,7 +36,6 @@ Partial Class kurz_detail
         Me.pridaj_clenaButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.IdLabel1 = New System.Windows.Forms.Label()
         Me.zmenButton = New System.Windows.Forms.Button()
         Me.ulozButton = New System.Windows.Forms.Button()
         Me.Kurz_idBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -81,6 +80,8 @@ Partial Class kurz_detail
         Me.Miesto_konaniaTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.miesto_konaniaTableAdapter()
         Me.OsobaClenoviaKurzuTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.osobaClenoviaKurzuTableAdapter()
         Me.ZmazClenaButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         NazovLabel = New System.Windows.Forms.Label()
         Zaciatok_kurzuLabel = New System.Windows.Forms.Label()
         Koniec_kurzuLabel = New System.Windows.Forms.Label()
@@ -215,14 +216,6 @@ Partial Class kurz_detail
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Label2"
-        '
-        'IdLabel1
-        '
-        Me.IdLabel1.Location = New System.Drawing.Point(504, 71)
-        Me.IdLabel1.Name = "IdLabel1"
-        Me.IdLabel1.Size = New System.Drawing.Size(100, 23)
-        Me.IdLabel1.TabIndex = 29
-        Me.IdLabel1.Text = "Label4"
         '
         'zmenButton
         '
@@ -568,11 +561,31 @@ Partial Class kurz_detail
         Me.ZmazClenaButton.Text = "Zmaž člena kurzu"
         Me.ZmazClenaButton.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(507, 135)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 54
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(526, 74)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 55
+        Me.Label4.Text = "Label4"
+        '
         'kurz_detail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1157, 702)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ZmazClenaButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.OsobaClenoviaKurzuDataGridView)
@@ -592,7 +605,6 @@ Partial Class kurz_detail
         Me.Controls.Add(Me.ulozButton)
         Me.Controls.Add(Cislo_protokoluLabel)
         Me.Controls.Add(Me.zmenButton)
-        Me.Controls.Add(Me.IdLabel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(NazovLabel)
@@ -626,7 +638,6 @@ Partial Class kurz_detail
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents IdLabel1 As System.Windows.Forms.Label
     Friend WithEvents zmenButton As System.Windows.Forms.Button
 
     Friend WithEvents ulozButton As System.Windows.Forms.Button
@@ -672,4 +683,6 @@ Partial Class kurz_detail
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents ZmazClenaButton As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

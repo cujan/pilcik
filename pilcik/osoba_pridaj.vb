@@ -19,7 +19,7 @@
         Me.BringToFront()
         Me.OsobaDataGridView.CurrentCell = Nothing
         Label5.BringToFront()
-
+        Me.kurzComboBox.SelectedValue = 0
     End Sub
 
     Private Sub OsobaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -74,10 +74,26 @@
             Me.OsobaDataGridView.CurrentCell = Nothing
 
             'zistenie id pridaneho clena
-            Dim con1 As New OleDbConnection(pripojovaci_retazec)
-            Dim com1 As New OleDbCommand("", con1)
-            con1.Open()
-            con1.Close()
+            Dim ZisteneIdPridanehoClena As Integer
+            Dim con2 As New OleDbConnection(pripojovaci_retazec)
+            Dim com2 As New OleDbCommand("SELECT     MAX(id) AS Expr1 FROM osoba", con2)
+            con2.Open()
+            ZisteneIdPridanehoClena = com2.ExecuteScalar
+            con2.Close()
+
+            If kurzComboBox.SelectedValue <> 0 Then
+                Dim con3 As New OleDbConnection(pripojovaci_retazec)
+                Dim com3 As New OleDbCommand("INSERT INTO clenovia_kurzu (kurz_id, clen_id) VALUES (@kurz_id, @clen_id)", con3)
+                With com3.Parameters
+                    .AddWithValue("kurz_id", kurzComboBox.SelectedValue)
+                    .AddWithValue("clen_id", ZisteneIdPridanehoClena)
+                End With
+                con3.Open()
+                com3.ExecuteNonQuery()
+                con3.Close()
+            End If
+
+
 
 
             'vymazanie udajov z policok
@@ -223,7 +239,17 @@
         Label4.DataBindings.Clear()
     End Sub
 
+   
+
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        MsgBox(kurzComboBox.SelectedValue)
+    End Sub
+
     Private Sub OsobaDataGridView_CellContentClick_2(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles OsobaDataGridView.CellContentClick
 
+    End Sub
+
+    Private Sub OsobaDataGridView_CellDoubleClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles OsobaDataGridView.CellDoubleClick
+        osoba_detail.Show()
     End Sub
 End Class

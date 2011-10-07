@@ -104,6 +104,7 @@ Partial Class osoba_pridaj
         Me.kurzComboBox = New System.Windows.Forms.ComboBox()
         Me.KurzpohladBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Kurz_pohladTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter()
+        Me.Button2 = New System.Windows.Forms.Button()
         Titul_predLabel = New System.Windows.Forms.Label()
         PriezviskoLabel = New System.Windows.Forms.Label()
         MenoLabel = New System.Windows.Forms.Label()
@@ -781,11 +782,21 @@ Partial Class osoba_pridaj
         '
         Me.Kurz_pohladTableAdapter.ClearBeforeFill = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(472, 279)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 46
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'osoba_pridaj
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(931, 712)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.kurzComboBox)
         Me.Controls.Add(Me.OsobaDataGridView)
         Me.Controls.Add(Me.OsobaBindingSource2BindingNavigator)
@@ -950,4 +961,5 @@ Partial Class osoba_pridaj
     Friend WithEvents kurzComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents KurzpohladBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Kurz_pohladTableAdapter As pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
