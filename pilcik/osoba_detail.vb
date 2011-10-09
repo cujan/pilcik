@@ -64,4 +64,7 @@
     End Sub
 
 
+    Private Sub Kurz_absolvovaneDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Kurz_absolvovaneDataGridView.CellContentClick
+
+    End Sub
 End Class

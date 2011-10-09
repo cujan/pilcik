@@ -22,15 +22,12 @@ Partial Class uvodna_obrazovka
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.verziaLabel = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.skonecena_platnostButton = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.verziaLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -88,42 +85,12 @@ Partial Class uvodna_obrazovka
         Me.verziaLabel.TabIndex = 5
         Me.verziaLabel.Text = "Label6"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(423, 166)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(240, 13)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Pocet clenov, ktorým vypršala platnosť preukazu:"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(456, 286)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'skonecena_platnostButton
-        '
-        Me.skonecena_platnostButton.Location = New System.Drawing.Point(456, 247)
-        Me.skonecena_platnostButton.Name = "skonecena_platnostButton"
-        Me.skonecena_platnostButton.Size = New System.Drawing.Size(243, 23)
-        Me.skonecena_platnostButton.TabIndex = 8
-        Me.skonecena_platnostButton.Text = "Osoby, ktorým skoncila platnosť preukazu"
-        Me.skonecena_platnostButton.UseVisualStyleBackColor = True
-        '
         'uvodna_obrazovka
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(929, 701)
         Me.ControlBox = False
-        Me.Controls.Add(Me.skonecena_platnostButton)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.verziaLabel)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -142,7 +109,4 @@ Partial Class uvodna_obrazovka
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents verziaLabel As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents skonecena_platnostButton As System.Windows.Forms.Button
 End Class

@@ -129,7 +129,7 @@
         pomocny.Show()
     End Sub
 
-    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
         Label2.Text = Label1.Text
         Label1.DataBindings.Clear()
