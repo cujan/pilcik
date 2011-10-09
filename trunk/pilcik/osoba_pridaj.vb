@@ -241,7 +241,7 @@
 
    
 
-    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         MsgBox(kurzComboBox.SelectedValue)
     End Sub
 

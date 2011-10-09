@@ -73,8 +73,6 @@ Partial Class osoba_detail
         Me.Kurz_absolvovaneTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_absolvovaneTableAdapter()
         Me.Kurz_absolvovaneBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Kurz_absolvovaneDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -256,6 +254,7 @@ Partial Class osoba_detail
         Me.OsobaBindingNavigator.Size = New System.Drawing.Size(987, 25)
         Me.OsobaBindingNavigator.TabIndex = 30
         Me.OsobaBindingNavigator.Text = "BindingNavigator1"
+        Me.OsobaBindingNavigator.Visible = False
         '
         'BindingNavigatorAddNewItem
         '
@@ -279,7 +278,7 @@ Partial Class osoba_detail
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(36, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -509,44 +508,42 @@ Partial Class osoba_detail
         '
         'Kurz_absolvovaneDataGridView
         '
+        Me.Kurz_absolvovaneDataGridView.AllowUserToAddRows = False
+        Me.Kurz_absolvovaneDataGridView.AllowUserToDeleteRows = False
+        Me.Kurz_absolvovaneDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Kurz_absolvovaneDataGridView.AutoGenerateColumns = False
+        Me.Kurz_absolvovaneDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Kurz_absolvovaneDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Kurz_absolvovaneDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn9})
+        Me.Kurz_absolvovaneDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn9})
         Me.Kurz_absolvovaneDataGridView.DataSource = Me.Kurz_absolvovaneBindingSource1
         Me.Kurz_absolvovaneDataGridView.Location = New System.Drawing.Point(12, 357)
         Me.Kurz_absolvovaneDataGridView.Name = "Kurz_absolvovaneDataGridView"
+        Me.Kurz_absolvovaneDataGridView.ReadOnly = True
         Me.Kurz_absolvovaneDataGridView.Size = New System.Drawing.Size(963, 369)
         Me.Kurz_absolvovaneDataGridView.TabIndex = 57
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "kurz_id"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "kurz_id"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nazov"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "nazov"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "nazov_kurzu"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "nazov_kurzu"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Názov kurzu"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "zaciatok_kurzu"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "zaciatok_kurzu"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Začiatok kurzu"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "koniec_kurzu"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "koniec_kurzu"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Koniec kurzu"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
         'osoba_detail
         '
@@ -642,8 +639,6 @@ Partial Class osoba_detail
     Friend WithEvents Kurz_absolvovaneTableAdapter As pilcik.pilcik_dbDataSetTableAdapters.kurz_absolvovaneTableAdapter
     Friend WithEvents Kurz_absolvovaneBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents Kurz_absolvovaneDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn

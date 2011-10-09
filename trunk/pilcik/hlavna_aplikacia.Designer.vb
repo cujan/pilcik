@@ -23,71 +23,71 @@ Partial Class hlavna_aplikacia
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(hlavna_aplikacia))
-        Me.MenuStrip = New System.Windows.Forms.MenuStrip
-        Me.FileMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator
-        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator
-        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrintPreviewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrintSetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.UndoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RedoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator
-        Me.CutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PasteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator
-        Me.SelectAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.NewWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.TileVerticalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.TileHorizontalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ArrangeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem
-        Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.OsobaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.KurzyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrehladToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.TlačovéZostavyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SkúšobnáKomisiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStrip = New System.Windows.Forms.ToolStrip
-        Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.PrintToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.PrintPreviewToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.osobaStripButton = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.FileMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintPreviewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintSetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UndoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RedoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PasteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SelectAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TileVerticalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TileHorizontalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArrangeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OsobaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KurzyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrehladToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TlačovéZostavyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SkúšobnáKomisiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PomocToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PošliEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PrintToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.PrintPreviewToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.osobaStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel
-        Me.StatusStrip = New System.Windows.Forms.StatusStrip
-        Me.PomocToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PošliEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -402,6 +402,7 @@ Partial Class hlavna_aplikacia
         Me.PrehladToolStripMenuItem.Name = "PrehladToolStripMenuItem"
         Me.PrehladToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.PrehladToolStripMenuItem.Text = "prehlad"
+        Me.PrehladToolStripMenuItem.Visible = False
         '
         'TlačovéZostavyToolStripMenuItem
         '
@@ -415,9 +416,22 @@ Partial Class hlavna_aplikacia
         Me.SkúšobnáKomisiaToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
         Me.SkúšobnáKomisiaToolStripMenuItem.Text = "Skúšobná komisia"
         '
+        'PomocToolStripMenuItem
+        '
+        Me.PomocToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PošliEmailToolStripMenuItem})
+        Me.PomocToolStripMenuItem.Name = "PomocToolStripMenuItem"
+        Me.PomocToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.PomocToolStripMenuItem.Text = "Pomoc"
+        '
+        'PošliEmailToolStripMenuItem
+        '
+        Me.PošliEmailToolStripMenuItem.Name = "PošliEmailToolStripMenuItem"
+        Me.PošliEmailToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
+        Me.PošliEmailToolStripMenuItem.Text = "Pošli e-mail"
+        '
         'ToolStrip
         '
-        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.ToolStripSeparator1, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton, Me.ToolStripSeparator2, Me.HelpToolStripButton, Me.ToolStripButton1, Me.osobaStripButton, Me.ToolStripButton2, Me.ToolStripButton3})
+        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.osobaStripButton, Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.ToolStripSeparator1, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton, Me.ToolStripSeparator2, Me.HelpToolStripButton, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip.Name = "ToolStrip"
         Me.ToolStrip.Size = New System.Drawing.Size(912, 25)
@@ -512,6 +526,7 @@ Partial Class hlavna_aplikacia
         Me.osobaStripButton.Name = "osobaStripButton"
         Me.osobaStripButton.Size = New System.Drawing.Size(23, 22)
         Me.osobaStripButton.Text = "ToolStripButton2"
+        Me.osobaStripButton.ToolTipText = "Osoba"
         '
         'ToolStripButton2
         '
@@ -521,6 +536,7 @@ Partial Class hlavna_aplikacia
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton2.Text = "ToolStripButton2"
+        Me.ToolStripButton2.ToolTipText = "Kurz"
         '
         'ToolStripButton3
         '
@@ -530,6 +546,7 @@ Partial Class hlavna_aplikacia
         Me.ToolStripButton3.Name = "ToolStripButton3"
         Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton3.Text = "ToolStripButton3"
+        Me.ToolStripButton3.Visible = False
         '
         'ToolStripStatusLabel
         '
@@ -545,19 +562,6 @@ Partial Class hlavna_aplikacia
         Me.StatusStrip.Size = New System.Drawing.Size(912, 22)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
-        '
-        'PomocToolStripMenuItem
-        '
-        Me.PomocToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PošliEmailToolStripMenuItem})
-        Me.PomocToolStripMenuItem.Name = "PomocToolStripMenuItem"
-        Me.PomocToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.PomocToolStripMenuItem.Text = "Pomoc"
-        '
-        'PošliEmailToolStripMenuItem
-        '
-        Me.PošliEmailToolStripMenuItem.Name = "PošliEmailToolStripMenuItem"
-        Me.PošliEmailToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.PošliEmailToolStripMenuItem.Text = "Pošli e-mail"
         '
         'hlavna_aplikacia
         '

@@ -104,7 +104,6 @@ Partial Class osoba_pridaj
         Me.kurzComboBox = New System.Windows.Forms.ComboBox()
         Me.KurzpohladBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Kurz_pohladTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter()
-        Me.Button2 = New System.Windows.Forms.Button()
         Titul_predLabel = New System.Windows.Forms.Label()
         PriezviskoLabel = New System.Windows.Forms.Label()
         MenoLabel = New System.Windows.Forms.Label()
@@ -446,7 +445,7 @@ Partial Class osoba_pridaj
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(625, 2)
+        Me.Label1.Location = New System.Drawing.Point(625, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 34
@@ -463,7 +462,7 @@ Partial Class osoba_pridaj
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(788, 379)
+        Me.Button1.Location = New System.Drawing.Point(501, 321)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 36
@@ -473,10 +472,10 @@ Partial Class osoba_pridaj
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label5.Location = New System.Drawing.Point(549, 48)
+        Me.Label5.Font = New System.Drawing.Font("Monotype Corsiva", 24.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.Label5.Location = New System.Drawing.Point(549, 2)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(123, 25)
+        Me.Label5.Size = New System.Drawing.Size(187, 39)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "Evidencia osôb"
         '
@@ -484,7 +483,7 @@ Partial Class osoba_pridaj
         '
         Me.GroupBox2.Controls.Add(Me.TextBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 314)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 244)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(447, 100)
         Me.GroupBox2.TabIndex = 41
@@ -519,7 +518,7 @@ Partial Class osoba_pridaj
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(678, 37)
+        Me.Label6.Location = New System.Drawing.Point(670, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 43
@@ -594,7 +593,7 @@ Partial Class osoba_pridaj
         'BindingNavigatorCountItem1
         '
         Me.BindingNavigatorCountItem1.Name = "BindingNavigatorCountItem1"
-        Me.BindingNavigatorCountItem1.Size = New System.Drawing.Size(36, 22)
+        Me.BindingNavigatorCountItem1.Size = New System.Drawing.Size(35, 22)
         Me.BindingNavigatorCountItem1.Text = "of {0}"
         Me.BindingNavigatorCountItem1.ToolTipText = "Total number of items"
         '
@@ -681,85 +680,86 @@ Partial Class osoba_pridaj
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OsobaDataGridView.AutoGenerateColumns = False
+        Me.OsobaDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.OsobaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.OsobaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47, Me.DataGridViewTextBoxColumn48, Me.DataGridViewTextBoxColumn49, Me.DataGridViewTextBoxColumn50})
         Me.OsobaDataGridView.DataSource = Me.OsobaBindingSource2
-        Me.OsobaDataGridView.Location = New System.Drawing.Point(12, 446)
+        Me.OsobaDataGridView.Location = New System.Drawing.Point(12, 350)
         Me.OsobaDataGridView.Name = "OsobaDataGridView"
         Me.OsobaDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.OsobaDataGridView.Size = New System.Drawing.Size(907, 254)
+        Me.OsobaDataGridView.Size = New System.Drawing.Size(907, 350)
         Me.OsobaDataGridView.TabIndex = 44
         '
         'DataGridViewTextBoxColumn39
         '
         Me.DataGridViewTextBoxColumn39.DataPropertyName = "titul_pred"
-        Me.DataGridViewTextBoxColumn39.HeaderText = "titul_pred"
+        Me.DataGridViewTextBoxColumn39.HeaderText = "Titul"
         Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
         '
         'DataGridViewTextBoxColumn40
         '
         Me.DataGridViewTextBoxColumn40.DataPropertyName = "priezvisko"
-        Me.DataGridViewTextBoxColumn40.HeaderText = "priezvisko"
+        Me.DataGridViewTextBoxColumn40.HeaderText = "Priezvisko"
         Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
         '
         'DataGridViewTextBoxColumn41
         '
         Me.DataGridViewTextBoxColumn41.DataPropertyName = "meno"
-        Me.DataGridViewTextBoxColumn41.HeaderText = "meno"
+        Me.DataGridViewTextBoxColumn41.HeaderText = "Meno"
         Me.DataGridViewTextBoxColumn41.Name = "DataGridViewTextBoxColumn41"
         '
         'DataGridViewTextBoxColumn42
         '
         Me.DataGridViewTextBoxColumn42.DataPropertyName = "datum_narodenia"
-        Me.DataGridViewTextBoxColumn42.HeaderText = "datum_narodenia"
+        Me.DataGridViewTextBoxColumn42.HeaderText = "Dátum narodenia"
         Me.DataGridViewTextBoxColumn42.Name = "DataGridViewTextBoxColumn42"
         '
         'DataGridViewTextBoxColumn43
         '
         Me.DataGridViewTextBoxColumn43.DataPropertyName = "rodne_cislo"
-        Me.DataGridViewTextBoxColumn43.HeaderText = "rodne_cislo"
+        Me.DataGridViewTextBoxColumn43.HeaderText = "Rodné číslo"
         Me.DataGridViewTextBoxColumn43.Name = "DataGridViewTextBoxColumn43"
         '
         'DataGridViewTextBoxColumn44
         '
         Me.DataGridViewTextBoxColumn44.DataPropertyName = "cislo_op"
-        Me.DataGridViewTextBoxColumn44.HeaderText = "cislo_op"
+        Me.DataGridViewTextBoxColumn44.HeaderText = "Číslo OP"
         Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
         '
         'DataGridViewTextBoxColumn45
         '
         Me.DataGridViewTextBoxColumn45.DataPropertyName = "ulica"
-        Me.DataGridViewTextBoxColumn45.HeaderText = "ulica"
+        Me.DataGridViewTextBoxColumn45.HeaderText = "Ulica"
         Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
         '
         'DataGridViewTextBoxColumn46
         '
         Me.DataGridViewTextBoxColumn46.DataPropertyName = "mesto"
-        Me.DataGridViewTextBoxColumn46.HeaderText = "mesto"
+        Me.DataGridViewTextBoxColumn46.HeaderText = "Mesto"
         Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
         '
         'DataGridViewTextBoxColumn47
         '
         Me.DataGridViewTextBoxColumn47.DataPropertyName = "psc"
-        Me.DataGridViewTextBoxColumn47.HeaderText = "psc"
+        Me.DataGridViewTextBoxColumn47.HeaderText = "PSČ"
         Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
         '
         'DataGridViewTextBoxColumn48
         '
         Me.DataGridViewTextBoxColumn48.DataPropertyName = "cislo_pilcickeho_preukazu"
-        Me.DataGridViewTextBoxColumn48.HeaderText = "cislo_pilcickeho_preukazu"
+        Me.DataGridViewTextBoxColumn48.HeaderText = "Číslo pilčíckeho preukazu"
         Me.DataGridViewTextBoxColumn48.Name = "DataGridViewTextBoxColumn48"
         '
         'DataGridViewTextBoxColumn49
         '
         Me.DataGridViewTextBoxColumn49.DataPropertyName = "email"
-        Me.DataGridViewTextBoxColumn49.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn49.HeaderText = "Email"
         Me.DataGridViewTextBoxColumn49.Name = "DataGridViewTextBoxColumn49"
         '
         'DataGridViewTextBoxColumn50
         '
         Me.DataGridViewTextBoxColumn50.DataPropertyName = "telefon"
-        Me.DataGridViewTextBoxColumn50.HeaderText = "telefon"
+        Me.DataGridViewTextBoxColumn50.HeaderText = "Telefón"
         Me.DataGridViewTextBoxColumn50.Name = "DataGridViewTextBoxColumn50"
         '
         'kurzComboBox
@@ -782,26 +782,15 @@ Partial Class osoba_pridaj
         '
         Me.Kurz_pohladTableAdapter.ClearBeforeFill = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(472, 279)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 46
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'osoba_pridaj
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(931, 712)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.kurzComboBox)
         Me.Controls.Add(Me.OsobaDataGridView)
         Me.Controls.Add(Me.OsobaBindingSource2BindingNavigator)
         Me.Controls.Add(Me.rodnecisloMaskedTextBox)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
@@ -827,6 +816,7 @@ Partial Class osoba_pridaj
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(TelefonLabel)
         Me.Controls.Add(Me.TelefonTextBox)
+        Me.Controls.Add(Me.Label6)
         Me.Name = "osoba_pridaj"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "osoba_pridaj"
@@ -946,6 +936,9 @@ Partial Class osoba_pridaj
     Friend WithEvents BindingNavigatorSeparator5 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents OsobaBindingSource2BindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents OsobaDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents kurzComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents KurzpohladBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Kurz_pohladTableAdapter As pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter
     Friend WithEvents DataGridViewTextBoxColumn39 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn40 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn41 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -958,8 +951,4 @@ Partial Class osoba_pridaj
     Friend WithEvents DataGridViewTextBoxColumn48 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn49 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn50 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents kurzComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents KurzpohladBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents Kurz_pohladTableAdapter As pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter
-    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

@@ -21,7 +21,7 @@ Public Class uvodna_obrazovka
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim mail As New MailMessage()
         Dim SmtpServer As New SmtpClient
@@ -46,7 +46,7 @@ Public Class uvodna_obrazovka
         End Try
     End Sub
 
-    Private Sub skonecena_platnostButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skonecena_platnostButton.Click
+    Private Sub skonecena_platnostButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         skoncena_platnost_osoba.Show()
     End Sub
 End Class
