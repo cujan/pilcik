@@ -15,6 +15,8 @@ Public Class uvodna_obrazovka
         con.Close()
         Label4.Text = pocet_osob
         Label5.Text = pocet_kurz
+
+        Label6.Text = My.Application.Info.Version.ToString
     End Sub
 
     Private Sub verziaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -51,7 +53,27 @@ Public Class uvodna_obrazovka
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        My.Computer.FileSystem.CopyFile("D:\pilcik\innosetup\inno output\setup_update.exe", "D:\a\setup_update.exe")
-        Process.Start("D:\a\setup_update.exe")
+        'My.Computer.Network.DownloadFile("http://polnohospodari.sk/pilcik/setup_update.exe", "D:\a\setup_update.exe")
+        'Process.Start("D:\a\setup_update.exe")
+        'hlavna_aplikacia.Close()
+
+        Dim wc As New WebClient
+        Dim version As String
+        Dim currentVersion As String = My.Application.Info.Version.ToString
+        version = wc.DownloadString("http://polnohospodari.sk/pilcik/verzia.txt")
+
+        If version > currentVersion Then
+            MsgBox("Je to novsia verzia")
+        Else
+            MsgBox("Nje je nova verzia")
+        End If
+
+
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim currentVersion As String = My.Application.Info.Version.ToString
+        MsgBox(currentVersion)
     End Sub
 End Class
