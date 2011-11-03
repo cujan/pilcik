@@ -17,7 +17,7 @@ Public Class uvodna_obrazovka
         Label5.Text = pocet_kurz
     End Sub
 
-    Private Sub verziaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles verziaLabel.Click
+    Private Sub verziaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -48,5 +48,10 @@ Public Class uvodna_obrazovka
 
     Private Sub skonecena_platnostButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         skoncena_platnost_osoba.Show()
+    End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        My.Computer.FileSystem.CopyFile("D:\pilcik\innosetup\inno output\setup_update.exe", "D:\a\setup_update.exe")
+        Process.Start("D:\a\setup_update.exe")
     End Sub
 End Class
