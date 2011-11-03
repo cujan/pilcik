@@ -167,3 +167,7 @@ D:\pilcik\pilcik\obj\Debug\pilcik.application
 D:\pilcik\pilcik\obj\Debug\pilcik.exe
 D:\pilcik\pilcik\obj\Debug\pilcik.xml
 D:\pilcik\pilcik\obj\Debug\pilcik.pdb
+D:\pilcik\web\pilcik\bin\Debug\pilcik.exe.config
+D:\pilcik\web\pilcik\obj\Debug\pilcik.exe
+D:\pilcik\web\pilcik\obj\Debug\pilcik.xml
+D:\pilcik\web\pilcik\obj\Debug\pilcik.pdb
