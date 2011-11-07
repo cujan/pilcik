@@ -201,3 +201,4 @@ D:\pilcik\web\pilcik\obj\Debug\RdlCompile.cache
 D:\pilcik\web\pilcik\obj\Debug\RdlCompile.compiled
 D:\pilcik\web\pilcik\obj\Debug\pilcik.exe.manifest
 D:\pilcik\web\pilcik\obj\Debug\pilcik.application
+D:\pilcik\pilcik\obj\Debug\GenerateResource.write.358.tlog
