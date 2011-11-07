@@ -17,6 +17,28 @@ Public Class uvodna_obrazovka
         Label5.Text = pocet_kurz
 
         Label6.Text = My.Application.Info.Version.ToString
+
+        'kontrola novej verzie
+        Try
+
+            Dim wc As New WebClient
+            Dim version As String
+            Dim currentVersion As String = My.Application.Info.Version.ToString
+            version = wc.DownloadString("http://polnohospodari.sk/pilcik/verzia.txt")
+
+            If version > currentVersion Then
+                If MsgBox("Existuje novšia verzia programu, chcete ju nainštalovať?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+                    If My.Computer.FileSystem.FileExists("C:\pilcik\tmp\setup_update.exe") Then
+                        My.Computer.FileSystem.DeleteFile("C:\pilcik\tmp\setup_update.exe")
+                    End If
+                    My.Computer.Network.DownloadFile("http://polnohospodari.sk/pilcik/setup_update.exe", "C:\pilcik\tmp\setup_update.exe")
+                    Process.Start("C:\pilcik\tmp\setup_update.exe")
+                    hlavna_aplikacia.Close()
+                End If
+            End If
+        Catch
+
+        End Try
     End Sub
 
     Private Sub verziaLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -52,7 +74,7 @@ Public Class uvodna_obrazovka
         skoncena_platnost_osoba.Show()
     End Sub
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'My.Computer.Network.DownloadFile("http://polnohospodari.sk/pilcik/setup_update.exe", "D:\a\setup_update.exe")
         'Process.Start("D:\a\setup_update.exe")
         'hlavna_aplikacia.Close()
@@ -72,7 +94,7 @@ Public Class uvodna_obrazovka
 
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim currentVersion As String = My.Application.Info.Version.ToString
         MsgBox(currentVersion)
     End Sub
