@@ -41,7 +41,7 @@ Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe"; DestDir: {app};
 Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.config"; DestDir: {app}; 
 Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.manifest"; DestDir: {app}; 
 Source: "D:\pilcik\setup\zdrojove subory\pilcik.xml"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik_db.accdb"; DestDir: {app}; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik_db.accdb"; DestDir: {app}; Flags: onlyifdoesntexist; 
 
 [Icons]
 Name: "{group}\Pilèík"; Filename: "{app}\pilcik.exe"
