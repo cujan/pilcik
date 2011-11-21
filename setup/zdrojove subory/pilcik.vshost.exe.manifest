@@ -77,14 +77,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pilcik.exe" size="606720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pilcik.exe" size="607232">
       <assemblyIdentity name="pilcik" version="1.1.1.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wZtyYiBm5gMkzWWDT0GL2iG9o7M=</dsig:DigestValue>
+        <dsig:DigestValue>SRnl3HdFqk/7Y+wuL3+TRvAOeoo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

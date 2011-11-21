@@ -23,7 +23,7 @@ SolidCompression=true
 DisableWelcomePage=true
 DisableFinishedPage=true
 AllowCancelDuringInstall=false
-CreateAppDir=false
+CreateAppDir=true
 DisableProgramGroupPage=yes
 DisableReadyPage=true
 PrivilegesRequired=none
@@ -35,16 +35,16 @@ Name: "slovak"; MessagesFile: "compiler:Languages\Slovak.isl"
 
 [Files]
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.application"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe.config"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe.manifest"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.pdb"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.application"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.config"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.manifest"; DestDir: {app}; 
-Source: "D:\pilcik\setup\zdrojove subory\pilcik.xml"; DestDir: {app}; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.application"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe.config"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.exe.manifest"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.pdb"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.application"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.config"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.vshost.exe.manifest"; DestDir: {app}; Flags: replacesameversion; 
+Source: "D:\pilcik\setup\zdrojove subory\pilcik.xml"; DestDir: {app}; Flags: replacesameversion; 
 
 [Icons]
 
