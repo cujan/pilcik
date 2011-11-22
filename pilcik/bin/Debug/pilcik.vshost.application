@@ -11,14 +11,14 @@
     <deploymentProvider codebase="http://www.usske.eu/pilcik_update/pilcik.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="pilcik.exe.manifest" size="6013">
+    <dependentAssembly dependencyType="install" codebase="pilcik.exe.manifest" size="6332">
       <assemblyIdentity name="pilcik.exe" version="1.0.0.20" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fJgfG+qkHdgFCQf4DjGh7utp3w8=</dsig:DigestValue>
+        <dsig:DigestValue>eypSr/H/+tPGozRgnQKrUKIqxNQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

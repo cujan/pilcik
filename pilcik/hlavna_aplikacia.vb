@@ -150,4 +150,8 @@ Public Class hlavna_aplikacia
     Private Sub PošliEmailToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PošliEmailToolStripMenuItem.Click
         mail.Show()
     End Sub
+
+    Private Sub ZálohovaťDatabázuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ZálohovaťDatabázuToolStripMenuItem.Click
+        zaloha.Show()
+    End Sub
 End Class
