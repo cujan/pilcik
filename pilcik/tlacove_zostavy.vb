@@ -1,5 +1,5 @@
 ﻿Public Class tlacove_zostavy
-
+    Public id_kurzu As Integer = 14
     Private Sub tlacove_zostavy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'KurzComboDataSet.kurz' table. You can move, or remove it, as needed.
 
@@ -52,5 +52,9 @@
             protokol_kurzComboBox.Visible = True
             Label2.Visible = True
         End If
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        tz_protokol_pila.Show()
     End Sub
 End Class
