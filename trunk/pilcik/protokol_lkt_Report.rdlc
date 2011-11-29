@@ -1,24 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
   <DataSources>
     <DataSource Name="pilcikdbConnectionString">
-      <rd:DataSourceID>5113afcf-28c5-4bc1-b97d-c66cc5594251</rd:DataSourceID>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString>Data Source=|DataDirectory|\pilcikdb.sdf</ConnectString>
       </ConnectionProperties>
+      <rd:DataSourceID>5113afcf-28c5-4bc1-b97d-c66cc5594251</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <InteractiveHeight>11in</InteractiveHeight>
-  <rd:DrawGrid>true</rd:DrawGrid>
-  <InteractiveWidth>8.5in</InteractiveWidth>
-  <rd:GridSpacing>0.25cm</rd:GridSpacing>
-  <rd:SnapToGrid>true</rd:SnapToGrid>
-  <RightMargin>2.5cm</RightMargin>
-  <LeftMargin>2.5cm</LeftMargin>
-  <BottomMargin>2.5cm</BottomMargin>
-  <rd:ReportID>23f85a4d-1d1f-4b68-ae4a-174ae3aaa5ff</rd:ReportID>
-  <PageWidth>21cm</PageWidth>
   <DataSets>
     <DataSet Name="protokolDataSet_kurz">
       <Fields>
@@ -71,9 +61,9 @@ WHERE     (kurz.id = @Param1)</CommandText>
       <rd:DataSetInfo>
         <rd:DataSetName>protokolDataSet</rd:DataSetName>
         <rd:TableName>kurz</rd:TableName>
-        <rd:TableAdapterName>kurzTableAdapter</rd:TableAdapterName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>kurzTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="protokolDataSet_skusobna_komisia">
@@ -103,9 +93,9 @@ WHERE     (kurz.id = @Param1)</CommandText>
       <rd:DataSetInfo>
         <rd:DataSetName>protokolDataSet</rd:DataSetName>
         <rd:TableName>skusobna_komisia</rd:TableName>
-        <rd:TableAdapterName>skusobna_komisiaTableAdapter</rd:TableAdapterName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>skusobna_komisiaTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="protokolDataSet_osoba">
@@ -165,9 +155,9 @@ ORDER BY osoba.priezvisko</CommandText>
       <rd:DataSetInfo>
         <rd:DataSetName>protokolDataSet</rd:DataSetName>
         <rd:TableName>osoba</rd:TableName>
-        <rd:TableAdapterName>osobaTableAdapter</rd:TableAdapterName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>osobaTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="pocet_clenov_kurzuDataSet_clenovia_kurzu">
@@ -188,9 +178,9 @@ HAVING      (kurz_id = @Param1)</CommandText>
       <rd:DataSetInfo>
         <rd:DataSetName>pocet_clenov_kurzuDataSet</rd:DataSetName>
         <rd:TableName>clenovia_kurzu</rd:TableName>
-        <rd:TableAdapterName>clenovia_kurzuTableAdapter</rd:TableAdapterName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>clenovia_kurzuTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="vseobecne_udajeDataSet_vseobecne_udaje">
@@ -248,682 +238,1110 @@ HAVING      (kurz_id = @Param1)</CommandText>
       <rd:DataSetInfo>
         <rd:DataSetName>vseobecne_udajeDataSet</rd:DataSetName>
         <rd:TableName>vseobecne_udaje</rd:TableName>
-        <rd:TableAdapterName>vseobecne_udajeTableAdapter</rd:TableAdapterName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>vseobecne_udajeTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  <Width>21.25cm</Width>
   <Body>
-    <ColumnSpacing>1cm</ColumnSpacing>
     <ReportItems>
-      <Textbox Name="textbox31">
-        <rd:DefaultName>textbox31</rd:DefaultName>
-        <Top>1.25cm</Top>
-        <Width>15.5cm</Width>
+      <Textbox Name="textbox36">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>zo skúšok odbornej spôsobilosti na „obsluhu a údržbu ŠLKT a UKT“
+v zmysle platnej legislatívy
+</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>3.25cm</Top>
+        <Height>1cm</Height>
+        <Width>18.25cm</Width>
         <Style>
-          <FontSize>13pt</FontSize>
-          <FontWeight>700</FontWeight>
-          <TextAlign>Center</TextAlign>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>28</ZIndex>
+      </Textbox>
+      <Textbox Name="textbox33">
         <CanGrow>true</CanGrow>
-        <Left>3.25cm</Left>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Miesto konania:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>5.5cm</Top>
+        <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value>2</Value>
-      </Textbox>
-      <Textbox Name="textbox1">
-        <rd:DefaultName>textbox1</rd:DefaultName>
-        <Top>0.25cm</Top>
-        <Width>18.5cm</Width>
-        <Style>
-          <FontSize>15pt</FontSize>
-          <FontWeight>700</FontWeight>
-          <TextAlign>Center</TextAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>27</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.5cm</Left>
-        <Height>0.75cm</Height>
-        <Value>=First(Fields!nazov.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!ulica.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!mesto.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!psc.Value, "vseobecne_udajeDataSet_vseobecne_udaje")</Value>
-      </Textbox>
-      <Textbox Name="textbox22">
-        <rd:DefaultName>textbox22</rd:DefaultName>
-        <Top>2.5cm</Top>
-        <Width>2.53968cm</Width>
+        <Width>3cm</Width>
+        <ZIndex>1</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>26</ZIndex>
+      </Textbox>
+      <Textbox Name="textbox32">
         <CanGrow>true</CanGrow>
-        <Left>10.5cm</Left>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Termín konania:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>6.5cm</Top>
+        <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value>=First(Fields!cislo_protokolu.Value, "protokolDataSet_kurz")</Value>
-      </Textbox>
-      <Textbox Name="textbox21">
-        <rd:DefaultName>textbox21</rd:DefaultName>
-        <Top>2.5cm</Top>
-        <Width>2.53968cm</Width>
+        <Width>3cm</Width>
+        <ZIndex>2</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>25</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>8.5cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>Protokol č.</Value>
       </Textbox>
-      <Textbox Name="textbox3">
-        <rd:DefaultName>textbox3</rd:DefaultName>
-        <Top>4.5cm</Top>
-        <Width>8cm</Width>
+      <Textbox Name="textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Členovia skúšobnej komisie: </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox9</rd:DefaultName>
+        <Top>7.5cm</Top>
+        <Left>1.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>4.75cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Výsledok skúšok: </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Top>10cm</Top>
+        <Left>1.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>4.5cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Day(Fields!zaciatok_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!zaciatok_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!zaciatok_kurzu.Value), "protokolDataSet_kurz") &amp; ". - " &amp; First(Day(Fields!koniec_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!koniec_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!koniec_kurzu.Value), "protokolDataSet_kurz")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox12</rd:DefaultName>
+        <Top>6.25cm</Top>
+        <Left>7.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>13cm</Width>
+        <ZIndex>5</ZIndex>
         <Style>
           <PaddingLeft>5pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>24</ZIndex>
+      </Textbox>
+      <Textbox Name="textbox14">
         <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!predseda.Value, "protokolDataSet_skusobna_komisia")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox14</rd:DefaultName>
+        <Top>7.5cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value>=First(Fields!typ_nazov.Value, "protokolDataSet_kurz")</Value>
+        <Width>11.25cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <PaddingLeft>5pt</PaddingLeft>
+        </Style>
       </Textbox>
-      <Textbox Name="textbox2">
-        <rd:DefaultName>textbox2</rd:DefaultName>
-        <Top>4.5cm</Top>
-        <Width>2.75cm</Width>
+      <Textbox Name="textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Zoznam kandidátov:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox11</rd:DefaultName>
+        <Top>11cm</Top>
+        <Left>1.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>3.75cm</Width>
+        <ZIndex>7</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>23</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>Typ kurzu:</Value>
       </Textbox>
-      <Table Name="table1">
-        <ZIndex>22</ZIndex>
-        <DataSetName>protokolDataSet_osoba</DataSetName>
-        <Top>12.25cm</Top>
-        <Width>16.39383cm</Width>
-        <Details>
-          <TableRows>
-            <TableRow>
-              <TableCells>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox28">
-                      <rd:DefaultName>textbox28</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>4</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>=RowNumber("table1") &amp; "."</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox29">
-                      <rd:DefaultName>textbox29</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>3</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>=Fields!priezvisko.Value</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox30">
-                      <rd:DefaultName>textbox30</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>2</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>=Fields!meno.Value</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox35">
-                      <rd:DefaultName>textbox35</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>1</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>=day(Fields!datum_narodenia.Value) &amp; ". " &amp; month(Fields!datum_narodenia.Value) &amp; ". " &amp; year(Fields!datum_narodenia.Value)</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox38">
-                      <rd:DefaultName>textbox38</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <CanGrow>true</CanGrow>
-                      <Value>=Fields!cislo_pilcickeho_preukazu.Value</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-              </TableCells>
-              <Height>0.63492cm</Height>
-            </TableRow>
-          </TableRows>
-        </Details>
+      <Textbox Name="textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!miesto_konania.Value, "protokolDataSet_kurz")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox13</rd:DefaultName>
+        <Top>5.5cm</Top>
+        <Left>7.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>8cm</Width>
+        <ZIndex>8</ZIndex>
         <Style>
-          <BorderStyle>
-            <Default>Solid</Default>
-          </BorderStyle>
+          <PaddingLeft>5pt</PaddingLeft>
         </Style>
-        <Header>
-          <TableRows>
-            <TableRow>
-              <TableCells>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox5">
-                      <rd:DefaultName>textbox5</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>9</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>P. č.</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox26">
-                      <rd:DefaultName>textbox26</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>8</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>Priezvisko</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox27">
-                      <rd:DefaultName>textbox27</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>7</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>Meno</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox34">
-                      <rd:DefaultName>textbox34</rd:DefaultName>
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>6</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>Dátum narodenia</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-                <TableCell>
-                  <ReportItems>
-                    <Textbox Name="textbox4">
-                      <Style>
-                        <BorderStyle>
-                          <Default>Solid</Default>
-                        </BorderStyle>
-                        <PaddingLeft>5pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                      <ZIndex>5</ZIndex>
-                      <CanGrow>true</CanGrow>
-                      <Value>Číslo pilč. preukazu</Value>
-                    </Textbox>
-                  </ReportItems>
-                </TableCell>
-              </TableCells>
-              <Height>0.63492cm</Height>
-            </TableRow>
-          </TableRows>
-        </Header>
-        <TableColumns>
-          <TableColumn>
-            <Width>1.25cm</Width>
-          </TableColumn>
-          <TableColumn>
-            <Width>3.67123cm</Width>
-          </TableColumn>
-          <TableColumn>
-            <Width>2.75342cm</Width>
-          </TableColumn>
-          <TableColumn>
-            <Width>3.21233cm</Width>
-          </TableColumn>
-          <TableColumn>
-            <Width>5.50685cm</Width>
-          </TableColumn>
-        </TableColumns>
-        <Height>1.26984cm</Height>
-        <Left>1.75cm</Left>
-      </Table>
-      <Textbox Name="textbox6">
+      </Textbox>
+      <Textbox Name="textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!clen1.Value, "protokolDataSet_skusobna_komisia")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox15</rd:DefaultName>
+        <Top>8.25cm</Top>
+        <Left>7.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>6.25cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <PaddingLeft>5pt</PaddingLeft>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!clen2.Value, "protokolDataSet_skusobna_komisia")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox16</rd:DefaultName>
+        <Top>9cm</Top>
+        <Left>7.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>6.25cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <PaddingLeft>5pt</PaddingLeft>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> počet uchádzačov, ktorí prospeli z teoretickej a praktickej časti: </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox17</rd:DefaultName>
         <Top>10cm</Top>
-        <Width>2.75cm</Width>
-        <Style>
-          <TextAlign>Left</TextAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>21</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>17.75cm</Left>
+        <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value>=Sum(Fields!pocet.Value, "pocet_clenov_kurzuDataSet_clenovia_kurzu")</Value>
-      </Textbox>
-      <Textbox Name="textbox25">
-        <Top>19.25cm</Top>
-        <Width>4cm</Width>
-        <Style>
-          <PaddingLeft>10pt</PaddingLeft>
-        </Style>
-        <ZIndex>20</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>4.5cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>=First(Day(Fields!koniec_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!koniec_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!koniec_kurzu.Value), "protokolDataSet_kurz")</Value>
-      </Textbox>
-      <Textbox Name="textbox24">
-        <rd:DefaultName>textbox24</rd:DefaultName>
-        <Top>19cm</Top>
-        <Width>2.75cm</Width>
+        <Width>10.25cm</Width>
+        <ZIndex>11</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>19</ZIndex>
+      </Textbox>
+      <Textbox Name="textbox18">
         <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> Členovia  komisie:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox18</rd:DefaultName>
+        <Top>14.5cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value> v Prešove, dňa  </Value>
-      </Textbox>
-      <Line Name="line3">
-        <Top>17.75cm</Top>
-        <Width>7.27513cm</Width>
+        <Width>3.75cm</Width>
+        <ZIndex>12</ZIndex>
         <Style>
-          <BorderStyle>
-            <Default>Solid</Default>
-          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>18</ZIndex>
+      </Textbox>
+      <Textbox Name="textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> predseda</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox19</rd:DefaultName>
+        <Top>14.5cm</Top>
+        <Left>7cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.53968cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> člen</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox20</rd:DefaultName>
+        <Top>15.75cm</Top>
+        <Left>7cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.53968cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> člen</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox23</rd:DefaultName>
+        <Top>17cm</Top>
+        <Left>7cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.53968cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="line1">
+        <Top>15.25cm</Top>
         <Left>10.25cm</Left>
         <Height>0cm</Height>
+        <Width>7.27513cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
       </Line>
       <Line Name="line2">
         <Top>16.5cm</Top>
+        <Left>10.25cm</Left>
+        <Height>0cm</Height>
         <Width>7.27513cm</Width>
-        <Style>
-          <BorderStyle>
-            <Default>Solid</Default>
-          </BorderStyle>
-        </Style>
         <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="line3">
+        <Top>17.75cm</Top>
         <Left>10.25cm</Left>
         <Height>0cm</Height>
-      </Line>
-      <Line Name="line1">
-        <Top>15.25cm</Top>
         <Width>7.27513cm</Width>
+        <ZIndex>18</ZIndex>
         <Style>
-          <BorderStyle>
-            <Default>Solid</Default>
-          </BorderStyle>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
         </Style>
-        <ZIndex>16</ZIndex>
-        <Left>10.25cm</Left>
-        <Height>0cm</Height>
       </Line>
-      <Textbox Name="textbox23">
-        <rd:DefaultName>textbox23</rd:DefaultName>
-        <Top>17cm</Top>
-        <Width>2.53968cm</Width>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>15</ZIndex>
+      <Textbox Name="textbox24">
         <CanGrow>true</CanGrow>
-        <Left>7cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> člen</Value>
-      </Textbox>
-      <Textbox Name="textbox20">
-        <rd:DefaultName>textbox20</rd:DefaultName>
-        <Top>15.75cm</Top>
-        <Width>2.53968cm</Width>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>14</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> člen</Value>
-      </Textbox>
-      <Textbox Name="textbox19">
-        <rd:DefaultName>textbox19</rd:DefaultName>
-        <Top>14.5cm</Top>
-        <Width>2.53968cm</Width>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>13</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> predseda</Value>
-      </Textbox>
-      <Textbox Name="textbox18">
-        <rd:DefaultName>textbox18</rd:DefaultName>
-        <Top>14.5cm</Top>
-        <Width>3.75cm</Width>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>12</ZIndex>
-        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> v Prešove, dňa  </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox24</rd:DefaultName>
+        <Top>19cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value> Členovia  komisie:</Value>
-      </Textbox>
-      <Textbox Name="textbox17">
-        <rd:DefaultName>textbox17</rd:DefaultName>
-        <Top>10cm</Top>
-        <Width>10.25cm</Width>
+        <Width>2.75cm</Width>
+        <ZIndex>19</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>11</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> počet uchádzačov, ktorí prospeli z teoretickej a praktickej časti: </Value>
       </Textbox>
-      <Textbox Name="textbox16">
-        <rd:DefaultName>textbox16</rd:DefaultName>
-        <Top>9cm</Top>
-        <Width>6.25cm</Width>
+      <Textbox Name="textbox25">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Day(Fields!koniec_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!koniec_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!koniec_kurzu.Value), "protokolDataSet_kurz")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>19.25cm</Top>
+        <Left>4.5cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>4cm</Width>
+        <ZIndex>20</ZIndex>
         <Style>
-          <PaddingLeft>5pt</PaddingLeft>
+          <PaddingLeft>10pt</PaddingLeft>
         </Style>
-        <ZIndex>10</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>=First(Fields!clen2.Value, "protokolDataSet_skusobna_komisia")</Value>
       </Textbox>
-      <Textbox Name="textbox15">
-        <rd:DefaultName>textbox15</rd:DefaultName>
-        <Top>8.25cm</Top>
-        <Width>6.25cm</Width>
+      <Textbox Name="textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!pocet.Value, "pocet_clenov_kurzuDataSet_clenovia_kurzu")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>10cm</Top>
+        <Left>17.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.75cm</Width>
+        <ZIndex>21</ZIndex>
         <Style>
-          <PaddingLeft>5pt</PaddingLeft>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>9</ZIndex>
+      </Textbox>
+      <Tablix Name="table1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>0.49213in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.44537in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.08402in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.2647in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.16805in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.24997in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>P. č.</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox26">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Priezvisko</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox27">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Meno</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox34">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Dátum narodenia</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Číslo pilč. preukazu</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.24997in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox28">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=RowNumber("table1") &amp; "."</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox29">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!priezvisko.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox29</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox30">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!meno.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox35">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=day(Fields!datum_narodenia.Value) &amp; ". " &amp; month(Fields!datum_narodenia.Value) &amp; ". " &amp; year(Fields!datum_narodenia.Value)</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox35</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox38">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!cislo_pilcickeho_preukazu.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox38</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>5pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="table1_Details_Group">
+                <DataElementName>Detail</DataElementName>
+              </Group>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+              <DataElementName>Detail_Collection</DataElementName>
+              <DataElementOutput>Output</DataElementOutput>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>protokolDataSet_osoba</DataSetName>
+        <Top>12.25cm</Top>
+        <Left>1.75cm</Left>
+        <Height>1.26984cm</Height>
+        <Width>16.39383cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="textbox2">
         <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Typ kurzu:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Top>4.5cm</Top>
+        <Left>1.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.75cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!typ_nazov.Value, "protokolDataSet_kurz")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Top>4.5cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
-        <Value>=First(Fields!clen1.Value, "protokolDataSet_skusobna_komisia")</Value>
-      </Textbox>
-      <Textbox Name="textbox13">
-        <rd:DefaultName>textbox13</rd:DefaultName>
-        <Top>5.5cm</Top>
         <Width>8cm</Width>
-        <Style>
-          <PaddingLeft>5pt</PaddingLeft>
-        </Style>
-        <ZIndex>8</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>=First(Fields!miesto_konania.Value, "protokolDataSet_kurz")</Value>
-      </Textbox>
-      <Textbox Name="textbox11">
-        <rd:DefaultName>textbox11</rd:DefaultName>
-        <Top>11cm</Top>
-        <Width>3.75cm</Width>
-        <Style>
-          <FontWeight>700</FontWeight>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <ZIndex>7</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> Zoznam kandidátov:</Value>
-      </Textbox>
-      <Textbox Name="textbox14">
-        <rd:DefaultName>textbox14</rd:DefaultName>
-        <Top>7.5cm</Top>
-        <Width>11.25cm</Width>
-        <Style>
-          <PaddingLeft>5pt</PaddingLeft>
-        </Style>
-        <ZIndex>6</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>=First(Fields!predseda.Value, "protokolDataSet_skusobna_komisia")</Value>
-      </Textbox>
-      <Textbox Name="textbox12">
-        <rd:DefaultName>textbox12</rd:DefaultName>
-        <Top>6.25cm</Top>
-        <Width>13cm</Width>
+        <ZIndex>24</ZIndex>
         <Style>
           <PaddingLeft>5pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>5</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>7.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value>=First(Day(Fields!zaciatok_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!zaciatok_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!zaciatok_kurzu.Value), "protokolDataSet_kurz") &amp; ". - " &amp; First(Day(Fields!koniec_kurzu.value), "protokolDataSet_kurz") &amp; "." &amp; First(Month(Fields!koniec_kurzu.Value), "protokolDataSet_kurz") &amp; "." &amp; First(Year(Fields!koniec_kurzu.Value), "protokolDataSet_kurz")</Value>
       </Textbox>
-      <Textbox Name="textbox10">
-        <rd:DefaultName>textbox10</rd:DefaultName>
-        <Top>10cm</Top>
-        <Width>4.5cm</Width>
+      <Textbox Name="textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Protokol č.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox21</rd:DefaultName>
+        <Top>2.5cm</Top>
+        <Left>8.5cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.53968cm</Width>
+        <ZIndex>25</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>4</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> Výsledok skúšok: </Value>
       </Textbox>
-      <Textbox Name="textbox9">
-        <rd:DefaultName>textbox9</rd:DefaultName>
-        <Top>7.5cm</Top>
-        <Width>4.75cm</Width>
+      <Textbox Name="textbox22">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!cislo_protokolu.Value, "protokolDataSet_kurz")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox22</rd:DefaultName>
+        <Top>2.5cm</Top>
+        <Left>10.5cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>2.53968cm</Width>
+        <ZIndex>26</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>3</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> Členovia skúšobnej komisie: </Value>
       </Textbox>
-      <Textbox Name="textbox32">
-        <Top>6.5cm</Top>
-        <Width>3cm</Width>
+      <Textbox Name="textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!nazov.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!ulica.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!mesto.Value, "vseobecne_udajeDataSet_vseobecne_udaje") &amp; ", " &amp; First(Fields!psc.Value, "vseobecne_udajeDataSet_vseobecne_udaje")</Value>
+                <Style>
+                  <FontSize>15pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.25cm</Top>
+        <Left>1.5cm</Left>
+        <Height>0.75cm</Height>
+        <Width>18.5cm</Width>
+        <ZIndex>27</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>2</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> Termín konania:</Value>
       </Textbox>
-      <Textbox Name="textbox33">
-        <Top>5.5cm</Top>
-        <Width>3cm</Width>
+      <Textbox Name="textbox31">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>2</Value>
+                <Style>
+                  <FontSize>13pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox31</rd:DefaultName>
+        <Top>1.25cm</Top>
+        <Left>3.25cm</Left>
+        <Height>0.63492cm</Height>
+        <Width>15.5cm</Width>
+        <ZIndex>28</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
-        <ZIndex>1</ZIndex>
-        <CanGrow>true</CanGrow>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Value> Miesto konania:</Value>
-      </Textbox>
-      <Textbox Name="textbox36">
-        <Top>3.25cm</Top>
-        <Width>18.25cm</Width>
-        <Style>
-          <TextAlign>Center</TextAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-        <CanGrow>true</CanGrow>
-        <Left>0cm</Left>
-        <Height>1cm</Height>
-        <Value>zo skúšok odbornej spôsobilosti na „obsluhu a údržbu ŠLKT a UKT“
-v zmysle platnej legislatívy
-</Value>
       </Textbox>
     </ReportItems>
-    <Height>21.13492cm</Height>
+    <Height>19.88492cm</Height>
+    <Style />
   </Body>
+  <Width>21.25cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <InteractiveHeight>11in</InteractiveHeight>
+    <InteractiveWidth>8.5in</InteractiveWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
   <Language>en-US</Language>
-  <TopMargin>2.5cm</TopMargin>
-  <PageHeight>29.7cm</PageHeight>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>23f85a4d-1d1f-4b68-ae4a-174ae3aaa5ff</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
 </Report>

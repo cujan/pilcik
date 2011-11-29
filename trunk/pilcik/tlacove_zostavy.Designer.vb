@@ -22,21 +22,18 @@ Partial Class tlacove_zostavy
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.protokol_kurzComboBox = New System.Windows.Forms.ComboBox
-        Me.KurzBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-       
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.protokol_pila_RadioButton = New System.Windows.Forms.RadioButton
-        Me.protokol_lkt_RadioButton = New System.Windows.Forms.RadioButton
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton
-
+        Me.components = New System.ComponentModel.Container()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.protokol_kurzComboBox = New System.Windows.Forms.ComboBox()
         Me.KurzBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-
-        CType(Me.KurzBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-       
+        Me.KurzBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.protokol_pila_RadioButton = New System.Windows.Forms.RadioButton()
+        Me.protokol_lkt_RadioButton = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.KurzBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KurzBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -60,14 +57,13 @@ Partial Class tlacove_zostavy
         Me.protokol_kurzComboBox.ValueMember = "id"
         Me.protokol_kurzComboBox.Visible = False
         '
+        'KurzBindingSource1
+        '
+        Me.KurzBindingSource1.DataMember = "kurz"
+        '
         'KurzBindingSource
         '
         Me.KurzBindingSource.DataMember = "kurz"
-
-        '
-        'PilcikdbDataSet
-        '
-        
         '
         'Label2
         '
@@ -112,24 +108,21 @@ Partial Class tlacove_zostavy
         Me.RadioButton3.Text = "RadioButton3"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
-        'KurzComboDataSet
+        'Button2
         '
-      
-        '
-        'KurzBindingSource1
-        '
-        Me.KurzBindingSource1.DataMember = "kurz"
-
-        '
-        'KurzTableAdapter1
-        '
-
+        Me.Button2.Location = New System.Drawing.Point(437, 327)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'tlacove_zostavy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(741, 547)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.protokol_lkt_RadioButton)
         Me.Controls.Add(Me.protokol_pila_RadioButton)
@@ -140,9 +133,8 @@ Partial Class tlacove_zostavy
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "tlacove_zostavy"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.KurzBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        
         CType(Me.KurzBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KurzBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,5 +150,6 @@ Partial Class tlacove_zostavy
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
 
     Friend WithEvents KurzBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
