@@ -182,6 +182,26 @@
         <rd:TableAdapterName>osobaClenoviaKurzuTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
+    <DataSet Name="pocetClenovKurzu">
+      <Fields>
+        <Field Name="pocet">
+          <DataField>pocet</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>pilcik_dbDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>pilcik_dbDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\pilcik\pilcik\pilcik_dbDataSet1.xsd</rd:SchemaPath>
+        <rd:TableName>pocetClenovKurzu</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>pocetClenovKurzuTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
   </DataSets>
   <Body>
     <ReportItems>
@@ -204,7 +224,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox6</rd:DefaultName>
-        <Top>3.25cm</Top>
+        <Top>1.6625cm</Top>
         <Height>1cm</Height>
         <Width>20.10854cm</Width>
         <Style>
@@ -229,7 +249,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox7</rd:DefaultName>
-        <Top>5.5cm</Top>
+        <Top>3.9125cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>3cm</Width>
@@ -256,7 +276,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox8</rd:DefaultName>
-        <Top>6.5cm</Top>
+        <Top>4.9125cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>3cm</Width>
@@ -283,7 +303,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox9</rd:DefaultName>
-        <Top>7.5cm</Top>
+        <Top>5.9125cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>4.75cm</Width>
@@ -310,7 +330,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox10</rd:DefaultName>
-        <Top>10cm</Top>
+        <Top>8.4125cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>4.5cm</Width>
@@ -339,8 +359,8 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox11</rd:DefaultName>
-        <Top>11cm</Top>
-        <Left>1.75cm</Left>
+        <Top>14.40669cm</Top>
+        <Left>1.68485cm</Left>
         <Height>0.63492cm</Height>
         <Width>3.75cm</Width>
         <ZIndex>5</ZIndex>
@@ -366,7 +386,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox12</rd:DefaultName>
-        <Top>6.25cm</Top>
+        <Top>4.6625cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>12.35854cm</Width>
@@ -393,7 +413,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox13</rd:DefaultName>
-        <Top>5.5cm</Top>
+        <Top>3.9125cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>8cm</Width>
@@ -417,10 +437,10 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox14</rd:DefaultName>
-        <Top>7.5cm</Top>
+        <Top>5.9125cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
-        <Width>11.25cm</Width>
+        <Width>6.25cm</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <PaddingLeft>5pt</PaddingLeft>
@@ -441,7 +461,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox15</rd:DefaultName>
-        <Top>8.25cm</Top>
+        <Top>6.6625cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>6.25cm</Width>
@@ -465,7 +485,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox16</rd:DefaultName>
-        <Top>9cm</Top>
+        <Top>7.4125cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>6.25cm</Width>
@@ -489,38 +509,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox17</rd:DefaultName>
-        <Top>10cm</Top>
+        <Top>8.4125cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>10.25cm</Width>
         <ZIndex>11</ZIndex>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="textbox18">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> Členovia  komisie:</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>textbox18</rd:DefaultName>
-        <Top>14.5cm</Top>
-        <Left>1.75cm</Left>
-        <Height>0.63492cm</Height>
-        <Width>3.75cm</Width>
-        <ZIndex>12</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -543,11 +536,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox19</rd:DefaultName>
-        <Top>14.5cm</Top>
-        <Left>7cm</Left>
+        <Top>11.16121cm</Top>
+        <Left>2.85178cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.53968cm</Width>
-        <ZIndex>13</ZIndex>
+        <ZIndex>12</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -570,11 +563,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox20</rd:DefaultName>
-        <Top>15.86508cm</Top>
-        <Left>7cm</Left>
+        <Top>11.16121cm</Top>
+        <Left>10.13771cm</Left>
         <Height>0.63492cm</Height>
-        <Width>2.53968cm</Width>
-        <ZIndex>14</ZIndex>
+        <Width>1.37551cm</Width>
+        <ZIndex>13</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -597,11 +590,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox23</rd:DefaultName>
-        <Top>17cm</Top>
-        <Left>7cm</Left>
+        <Top>11.16121cm</Top>
+        <Left>16.75407cm</Left>
         <Height>0.63492cm</Height>
-        <Width>2.53968cm</Width>
-        <ZIndex>15</ZIndex>
+        <Width>1.13739cm</Width>
+        <ZIndex>14</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -610,35 +603,11 @@ v zmysle vyhl. č. 46/2010 Zz.
         </Style>
       </Textbox>
       <Line Name="line1">
-        <Top>15.25cm</Top>
-        <Left>10.25cm</Left>
+        <Top>10.98482cm</Top>
+        <Left>1.68485cm</Left>
         <Height>0cm</Height>
-        <Width>7.27513cm</Width>
-        <ZIndex>16</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
-      <Line Name="line2">
-        <Top>16.5cm</Top>
-        <Left>10.25cm</Left>
-        <Height>0cm</Height>
-        <Width>7.27513cm</Width>
-        <ZIndex>17</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
-      <Line Name="line3">
-        <Top>17.75cm</Top>
-        <Left>10.25cm</Left>
-        <Height>0cm</Height>
-        <Width>7.27513cm</Width>
-        <ZIndex>18</ZIndex>
+        <Width>4.75cm</Width>
+        <ZIndex>15</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -656,16 +625,20 @@ v zmysle vyhl. č. 46/2010 Zz.
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox24</rd:DefaultName>
-        <Top>18.0475cm</Top>
-        <Left>1.79339cm</Left>
+        <Top>12.59708cm</Top>
+        <Left>1.5cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.75cm</Width>
-        <ZIndex>19</ZIndex>
+        <ZIndex>16</ZIndex>
         <Style>
+          <Border />
+          <VerticalAlign>Middle</VerticalAlign>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
           <PaddingTop>2pt</PaddingTop>
@@ -679,19 +652,23 @@ v zmysle vyhl. č. 46/2010 Zz.
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
+                <Value>=First(Day(Fields!koniec_kurzu.value), "kurz") &amp; "." &amp; First(Month(Fields!koniec_kurzu.Value), "kurz") &amp; "." &amp; First(Year(Fields!koniec_kurzu.Value), "kurz")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>18.48271cm</Top>
-        <Left>5.02917cm</Left>
+        <Top>12.59708cm</Top>
+        <Left>4.42639cm</Left>
         <Height>0.63492cm</Height>
         <Width>4cm</Width>
-        <ZIndex>20</ZIndex>
+        <ZIndex>17</ZIndex>
         <Style>
+          <Border />
+          <VerticalAlign>Middle</VerticalAlign>
           <PaddingLeft>10pt</PaddingLeft>
         </Style>
       </Textbox>
@@ -702,7 +679,7 @@ v zmysle vyhl. č. 46/2010 Zz.
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
+                <Value>=Sum(Fields!pocet.Value, "pocetClenovKurzu")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -712,11 +689,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox4</rd:DefaultName>
-        <Top>10cm</Top>
+        <Top>8.4125cm</Top>
         <Left>17.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.35854cm</Width>
-        <ZIndex>21</ZIndex>
+        <ZIndex>18</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -739,11 +716,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox2</rd:DefaultName>
-        <Top>4.5cm</Top>
+        <Top>2.9125cm</Top>
         <Left>1.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.75cm</Width>
-        <ZIndex>22</ZIndex>
+        <ZIndex>19</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -766,11 +743,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox3</rd:DefaultName>
-        <Top>4.5cm</Top>
+        <Top>2.9125cm</Top>
         <Left>7.75cm</Left>
         <Height>0.63492cm</Height>
         <Width>8cm</Width>
-        <ZIndex>23</ZIndex>
+        <ZIndex>20</ZIndex>
         <Style>
           <PaddingLeft>5pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -793,11 +770,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox21</rd:DefaultName>
-        <Top>2.50925cm</Top>
+        <Top>0.9525cm</Top>
         <Left>8.5cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.53968cm</Width>
-        <ZIndex>24</ZIndex>
+        <ZIndex>21</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -820,43 +797,11 @@ v zmysle vyhl. č. 46/2010 Zz.
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox22</rd:DefaultName>
-        <Top>2.5cm</Top>
+        <Top>0.9525cm</Top>
         <Left>10.5cm</Left>
         <Height>0.63492cm</Height>
         <Width>2.53968cm</Width>
-        <ZIndex>25</ZIndex>
-        <Style>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="textbox1">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=First(Fields!nazov.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!ulica.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!mesto.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!psc.Value, "vseobecneUdaje")</Value>
-                <Style>
-                  <FontSize>15pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Center</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>textbox1</rd:DefaultName>
-        <Top>0.25cm</Top>
-        <Left>1.5cm</Left>
-        <Height>0.75cm</Height>
-        <Width>18.5cm</Width>
-        <ZIndex>26</ZIndex>
+        <ZIndex>22</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
@@ -897,7 +842,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                           <TextRuns>
                             <TextRun>
                               <Value>P. č.</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -906,10 +853,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox58</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -927,7 +873,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                           <TextRuns>
                             <TextRun>
                               <Value>Priezvisko</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -936,10 +884,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox27</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -957,7 +904,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                           <TextRuns>
                             <TextRun>
                               <Value>Meno</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -966,10 +915,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox29</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -987,7 +935,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                           <TextRuns>
                             <TextRun>
                               <Value>Dátum narodenia</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -996,10 +946,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox31</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1017,7 +966,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                           <TextRuns>
                             <TextRun>
                               <Value>číslo pilčíckeho preukazu</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1026,10 +977,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox33</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1061,10 +1011,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>Textbox59</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>5pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1091,10 +1040,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>priezvisko</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>5pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1121,10 +1069,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>meno</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>5pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1141,7 +1088,7 @@ v zmysle vyhl. č. 46/2010 Zz.
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=FormatDateTime(Fields!datum_narodenia.Value,DateFormat.ShortDate("d"))</Value>
+                              <Value>=FormatDateTime(Fields!datum_narodenia.Value,DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1151,10 +1098,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>datum_narodenia</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>5pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1181,10 +1127,9 @@ v zmysle vyhl. č. 46/2010 Zz.
                       <rd:DefaultName>cislo_pilcickeho_preukazu</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>5pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1216,23 +1161,89 @@ v zmysle vyhl. č. 46/2010 Zz.
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>osobaClenoviaKurzu</DataSetName>
-        <Top>11.81131cm</Top>
-        <Left>1.79339cm</Left>
+        <Top>15.218cm</Top>
+        <Left>1.6197cm</Left>
         <Height>1.2cm</Height>
-        <Width>18.31516cm</Width>
-        <ZIndex>27</ZIndex>
+        <Width>18.31515cm</Width>
+        <ZIndex>23</ZIndex>
         <Style>
           <Border>
-            <Style>None</Style>
+            <Style>Solid</Style>
           </Border>
         </Style>
       </Tablix>
+      <Line Name="line2">
+        <Top>10.98482cm</Top>
+        <Left>8.39146cm</Left>
+        <Height>0cm</Height>
+        <Width>4.75cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="line3">
+        <Top>10.98482cm</Top>
+        <Left>14.94195cm</Left>
+        <Height>0cm</Height>
+        <Width>4.75cm</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
     </ReportItems>
-    <Height>19.88492cm</Height>
+    <Height>16.89513cm</Height>
     <Style />
   </Body>
   <Width>20.48917cm</Width>
   <Page>
+    <PageHeader>
+      <Height>1.08479cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!nazov.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!ulica.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!mesto.Value, "vseobecneUdaje") &amp; ", " &amp; First(Fields!psc.Value, "vseobecneUdaje")</Value>
+                  <Style>
+                    <FontSize>15pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox1</rd:DefaultName>
+          <Left>1.43485cm</Left>
+          <Height>0.75cm</Height>
+          <Width>18.5cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <InteractiveHeight>11in</InteractiveHeight>

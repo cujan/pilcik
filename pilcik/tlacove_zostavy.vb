@@ -1,5 +1,6 @@
 ﻿Public Class tlacove_zostavy
     Public id_kurzu As Integer = 14
+    Public textPila As String = "Pila"
     Private Sub tlacove_zostavy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'KurzComboDataSet.kurz' table. You can move, or remove it, as needed.
 
