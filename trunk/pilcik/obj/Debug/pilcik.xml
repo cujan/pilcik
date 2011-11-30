@@ -71,6 +71,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.pocetClenovKurzuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -123,6 +127,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.pocetClenovKurzuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.c_typ_kurzuRowChangeEvent">
 	<summary>
 Row event argument class
@@ -172,6 +180,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:pilcik.pilcik_dbDataSet.protokolKurzRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSet.pocetClenovKurzuRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -228,6 +240,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.protokolKurzTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pilcik.pilcik_dbDataSetTableAdapters.pocetClenovKurzuTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

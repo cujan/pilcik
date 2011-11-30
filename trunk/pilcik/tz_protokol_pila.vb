@@ -1,11 +1,13 @@
 ﻿Public Class tz_protokol_pila
 
     Private Sub tz_protokol_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: Tento řádek načte data do tabulky 'Pilcik_dbDataSet.pocetClenovKurzu'. Můžete jej přesunout nebo jej odstranit podle potřeby.
+        Dim text As String = tlacove_zostavy.textPila
 
         Dim id As Integer = tlacove_zostavy.id_kurzu
         'TODO: Tento řádek načte data do tabulky 'Pilcik_dbDataSet.osobaClenoviaKurzu'. Můžete jej přesunout nebo jej odstranit podle potřeby.
         Me.OsobaClenoviaKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.osobaClenoviaKurzu, id)
-
+        Me.PocetClenovKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.pocetClenovKurzu, id)
 
 
         'TODO: Tento řádek načte data do tabulky 'Pilcik_dbDataSet.skusobna_komisia'. Můžete jej přesunout nebo jej odstranit podle potřeby.

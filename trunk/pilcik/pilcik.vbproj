@@ -280,7 +280,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="protokol_lkt_Report.rdlc" />
-    <EmbeddedResource Include="protokol_Report.rdlc" />
+    <EmbeddedResource Include="protokol_pilaReport.rdlc" />
     <EmbeddedResource Include="skoncena_platnost_osoba.resx">
       <DependentUpon>skoncena_platnost_osoba.vb</DependentUpon>
       <SubType>Designer</SubType>
