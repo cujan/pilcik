@@ -4,7 +4,7 @@
         'TODO: Tento řádek načte data do tabulky 'Pilcik_dbDataSet.pocetClenovKurzu'. Můžete jej přesunout nebo jej odstranit podle potřeby.
         Dim text As String = tlacove_zostavy.textPila
 
-        Dim id As Integer = tlacove_zostavy.id_kurzu
+        Dim id As Integer = tlacove_zostavy.ComboBox1.SelectedValue
         'TODO: Tento řádek načte data do tabulky 'Pilcik_dbDataSet.osobaClenoviaKurzu'. Můžete jej přesunout nebo jej odstranit podle potřeby.
         Me.OsobaClenoviaKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.osobaClenoviaKurzu, id)
         Me.PocetClenovKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.pocetClenovKurzu, id)

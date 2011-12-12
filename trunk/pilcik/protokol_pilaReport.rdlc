@@ -1088,7 +1088,7 @@ v zmysle vyhl. č. 46/2010 Zz.
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=FormatDateTime(Fields!datum_narodenia.Value,DateFormat.ShortDate)</Value>
+                              <Value>=day(Fields!datum_narodenia.Value) &amp; ". " &amp; month(Fields!datum_narodenia.Value) &amp; ". " &amp; year(Fields!datum_narodenia.Value)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>

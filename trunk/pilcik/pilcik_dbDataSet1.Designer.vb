@@ -11747,7 +11747,7 @@ Namespace pilcik_dbDataSetTableAdapters
             Me._commandCollection(0).CommandText = "SELECT     osoba.priezvisko, osoba.meno, osoba.datum_narodenia, osoba.cislo_pilci"& _ 
                 "ckeho_preukazu, osoba.id"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM         (clenovia_kurzu INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"             "& _ 
                 "         osoba ON clenovia_kurzu.clen_id = osoba.id)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE     (clenovia_kurzu."& _ 
-                "kurz_id = ?)"
+                "kurz_id = ?)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY osoba.priezvisko"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(0).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("kurz_id", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "kurz_id", Global.System.Data.DataRowVersion.Current, false, Nothing))
         End Sub
