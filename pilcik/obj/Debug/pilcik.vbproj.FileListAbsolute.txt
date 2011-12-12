@@ -201,3 +201,4 @@ D:\pilcik\pilcik\obj\Debug\pilcik.application
 D:\pilcik\pilcik\obj\Debug\pilcik.exe
 D:\pilcik\pilcik\obj\Debug\pilcik.xml
 D:\pilcik\pilcik\obj\Debug\pilcik.pdb
+D:\pilcik\pilcik\obj\Debug\GenerateResource-ResGen.read.4.tlog
