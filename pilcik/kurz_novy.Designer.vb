@@ -33,14 +33,10 @@ Partial Class kurz_novy
         Me.Koniec_kurzuDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.ulozButton = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TypComboBox = New System.Windows.Forms.ComboBox()
         Me.CtypkurzuBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Pilcik_dbDataSet = New pilcik.pilcik_dbDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.KurzBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KurzTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurzTableAdapter()
@@ -174,24 +170,6 @@ Partial Class kurz_novy
         Me.Button1.Text = "Zmaž kurz"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(499, 326)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Label1"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(499, 339)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 13)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Label2"
-        '
         'TypComboBox
         '
         Me.TypComboBox.DataSource = Me.CtypkurzuBindingSource
@@ -218,29 +196,11 @@ Partial Class kurz_novy
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Monotype Corsiva", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label3.Location = New System.Drawing.Point(666, 27)
+        Me.Label3.Location = New System.Drawing.Point(703, 22)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(234, 39)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Evidencia kurzov"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(550, 326)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 13)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "label4"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(550, 339)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 13)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Label5"
         '
         'Label6
         '
@@ -294,6 +254,7 @@ Partial Class kurz_novy
         Me.KurzBindingNavigator.Size = New System.Drawing.Size(1143, 25)
         Me.KurzBindingNavigator.TabIndex = 21
         Me.KurzBindingNavigator.Text = "BindingNavigator1"
+        Me.KurzBindingNavigator.Visible = False
         '
         'BindingNavigatorAddNewItem
         '
@@ -307,8 +268,8 @@ Partial Class kurz_novy
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(31, 22)
+        Me.BindingNavigatorCountItem.Text = "z {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
         'BindingNavigatorDeleteItem
@@ -401,11 +362,11 @@ Partial Class kurz_novy
         Me.KurzDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.KurzDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
         Me.KurzDataGridView.DataSource = Me.KurzBindingSource
-        Me.KurzDataGridView.Location = New System.Drawing.Point(12, 249)
+        Me.KurzDataGridView.Location = New System.Drawing.Point(12, 256)
         Me.KurzDataGridView.Name = "KurzDataGridView"
         Me.KurzDataGridView.ReadOnly = True
         Me.KurzDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.KurzDataGridView.Size = New System.Drawing.Size(1119, 466)
+        Me.KurzDataGridView.Size = New System.Drawing.Size(1119, 459)
         Me.KurzDataGridView.TabIndex = 21
         '
         'DataGridViewTextBoxColumn8
@@ -519,8 +480,6 @@ Partial Class kurz_novy
         Me.Controls.Add(Me.TypComboBox)
         Me.Controls.Add(Miesto_konaniaLabel)
         Me.Controls.Add(TypLabel)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ulozButton)
         Me.Controls.Add(NazovLabel)
@@ -528,8 +487,6 @@ Partial Class kurz_novy
         Me.Controls.Add(Me.Zaciatok_kurzuDateTimePicker)
         Me.Controls.Add(Koniec_kurzuLabel)
         Me.Controls.Add(Me.Koniec_kurzuDateTimePicker)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.Name = "kurz_novy"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
@@ -555,14 +512,10 @@ Partial Class kurz_novy
     Friend WithEvents Koniec_kurzuDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents ulozButton As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TypComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
 
 
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Pilcik_dbDataSet As pilcik.pilcik_dbDataSet
     Friend WithEvents KurzBindingSource As System.Windows.Forms.BindingSource

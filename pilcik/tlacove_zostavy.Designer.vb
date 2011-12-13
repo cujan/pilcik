@@ -24,15 +24,15 @@ Partial Class tlacove_zostavy
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Pilcik_dbDataSet = New pilcik.pilcik_dbDataSet()
         Me.KurzpohladBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Pilcik_dbDataSet = New pilcik.pilcik_dbDataSet()
         Me.Kurz_pohladTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pilaRadioButton = New System.Windows.Forms.RadioButton()
         Me.lktRadioButton = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KurzpohladBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,15 +48,15 @@ Partial Class tlacove_zostavy
         Me.ComboBox1.TabIndex = 0
         Me.ComboBox1.ValueMember = "id"
         '
-        'Pilcik_dbDataSet
-        '
-        Me.Pilcik_dbDataSet.DataSetName = "pilcik_dbDataSet"
-        Me.Pilcik_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'KurzpohladBindingSource
         '
         Me.KurzpohladBindingSource.DataMember = "kurz_pohlad"
         Me.KurzpohladBindingSource.DataSource = Me.Pilcik_dbDataSet
+        '
+        'Pilcik_dbDataSet
+        '
+        Me.Pilcik_dbDataSet.DataSetName = "pilcik_dbDataSet"
+        Me.Pilcik_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Kurz_pohladTableAdapter
         '
@@ -116,8 +116,8 @@ Partial Class tlacove_zostavy
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "tlacove_zostavy"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KurzpohladBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pilcik_dbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
