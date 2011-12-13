@@ -1,6 +1,6 @@
 ﻿Public Class osoba_detail
 
-    Dim vybrana_osoba_id As Integer = osoba_pridaj.Label1.Text
+    Dim vybrana_osoba_id As Integer = osoba_pridaj.idClen
 
     Private Sub osoba_detail_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         

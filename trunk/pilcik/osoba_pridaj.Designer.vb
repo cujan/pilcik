@@ -61,15 +61,11 @@ Partial Class osoba_pridaj
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.OsobaBindingSource1BindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.rodnecisloMaskedTextBox = New System.Windows.Forms.MaskedTextBox()
         Me.Pilcik_dbDataSet = New pilcik.pilcik_dbDataSet()
         Me.OsobaBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
@@ -104,6 +100,7 @@ Partial Class osoba_pridaj
         Me.kurzComboBox = New System.Windows.Forms.ComboBox()
         Me.KurzpohladBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Kurz_pohladTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_pohladTableAdapter()
+        Me.Button2 = New System.Windows.Forms.Button()
         Titul_predLabel = New System.Windows.Forms.Label()
         PriezviskoLabel = New System.Windows.Forms.Label()
         MenoLabel = New System.Windows.Forms.Label()
@@ -442,24 +439,6 @@ Partial Class osoba_pridaj
         Me.OsobaBindingSource1BindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.OsobaBindingSource1BindingNavigatorSaveItem.Text = "Save Data"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(625, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 34
-        Me.Label1.Text = "Label1"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(625, 14)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 35
-        Me.Label2.Text = "Label2"
-        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(501, 321)
@@ -473,7 +452,7 @@ Partial Class osoba_pridaj
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Monotype Corsiva", 24.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label5.Location = New System.Drawing.Point(549, 2)
+        Me.Label5.Location = New System.Drawing.Point(526, 9)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(187, 39)
         Me.Label5.TabIndex = 39
@@ -506,23 +485,6 @@ Partial Class osoba_pridaj
         Me.Label3.Size = New System.Drawing.Size(65, 13)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Priezvisko"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(678, 2)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(0, 13)
-        Me.Label4.TabIndex = 42
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(670, 14)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 43
-        Me.Label6.Text = "Label6"
         '
         'rodnecisloMaskedTextBox
         '
@@ -593,8 +555,8 @@ Partial Class osoba_pridaj
         'BindingNavigatorCountItem1
         '
         Me.BindingNavigatorCountItem1.Name = "BindingNavigatorCountItem1"
-        Me.BindingNavigatorCountItem1.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem1.Text = "of {0}"
+        Me.BindingNavigatorCountItem1.Size = New System.Drawing.Size(31, 22)
+        Me.BindingNavigatorCountItem1.Text = "z {0}"
         Me.BindingNavigatorCountItem1.ToolTipText = "Total number of items"
         '
         'BindingNavigatorDeleteItem1
@@ -782,21 +744,28 @@ Partial Class osoba_pridaj
         '
         Me.Kurz_pohladTableAdapter.ClearBeforeFill = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(533, 263)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 46
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'osoba_pridaj
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(931, 712)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.kurzComboBox)
         Me.Controls.Add(Me.OsobaDataGridView)
         Me.Controls.Add(Me.OsobaBindingSource2BindingNavigator)
         Me.Controls.Add(Me.rodnecisloMaskedTextBox)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ulozButton)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Titul_predLabel)
@@ -816,7 +785,6 @@ Partial Class osoba_pridaj
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(TelefonLabel)
         Me.Controls.Add(Me.TelefonTextBox)
-        Me.Controls.Add(Me.Label6)
         Me.Name = "osoba_pridaj"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "osoba_pridaj"
@@ -879,8 +847,6 @@ Partial Class osoba_pridaj
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents OsobaBindingSource1BindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents KurzBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -915,8 +881,6 @@ Partial Class osoba_pridaj
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents rodnecisloMaskedTextBox As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Pilcik_dbDataSet As pilcik.pilcik_dbDataSet
     Friend WithEvents OsobaBindingSource2 As System.Windows.Forms.BindingSource
@@ -951,4 +915,5 @@ Partial Class osoba_pridaj
     Friend WithEvents DataGridViewTextBoxColumn48 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn49 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn50 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

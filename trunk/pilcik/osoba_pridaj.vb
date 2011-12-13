@@ -1,8 +1,7 @@
 ﻿Public Class osoba_pridaj
 
-    Private Sub osoba_pridaj_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-
-    End Sub
+    Public idClen As Integer = -1
+    Public priezvisko As String = String.Empty
 
     Private Sub osoba_pridaj_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz_pohlad' table. You can move, or remove it, as needed.
@@ -20,6 +19,11 @@
         Me.OsobaDataGridView.CurrentCell = Nothing
         Label5.BringToFront()
         Me.kurzComboBox.SelectedValue = 0
+
+
+
+
+
     End Sub
 
     Private Sub OsobaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -129,14 +133,14 @@
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim priezvisko As String = Label4.Text
-        If Label4.Text <> "" Then
+
+        If priezvisko <> "" Then
             If MsgBox("Naozaj chcete zmazať vybraného člena - " + priezvisko + "? Zmaže sa aj ako účastník všetkých kurzov!!!", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
                 Dim con As New OleDbConnection(pripojovaci_retazec)
                 Dim com As New OleDbCommand("DELETE FROM osoba WHERE id = @id", con)
                 Dim com1 As New OleDbCommand("DELETE FROM clenovia_kurzu WHERE clen_id = @id", con)
-                com.Parameters.AddWithValue("id", Label2.Text)
-                com1.Parameters.AddWithValue("id", Label2.Text)
+                com.Parameters.AddWithValue("id", idClen)
+                com1.Parameters.AddWithValue("id", idClen)
                 con.Open()
                 com.ExecuteNonQuery()
                 com1.ExecuteNonQuery()
@@ -171,16 +175,7 @@
 
     End Sub
 
-    Private Sub OsobaDataGridView_CellClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
-        'nacitanie id
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "id", True))
-        Label2.Text = Label1.Text
-        Label1.DataBindings.Clear()
-        'nacitanie prieyviska
-        Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "priezvisko", True))
-        Label6.Text = Label4.Text
-        Label4.DataBindings.Clear()
-    End Sub
+    
 
     Private Sub OsobaDataGridView_CellContentClick_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
 
@@ -230,13 +225,21 @@
 
     Private Sub OsobaDataGridView_CellClick2(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles OsobaDataGridView.CellClick
         'nacitanie id
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "id", True))
-        Label2.Text = Label1.Text
-        Label1.DataBindings.Clear()
+        idClen = Me.OsobaBindingSource2.Current("id")
+        priezvisko = Me.OsobaBindingSource2.Current("priezvisko")
+
+
+        'Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "id", True))
+        'Label2.Text = Label1.Text
+        'Label1.DataBindings.Clear()
+
+
+
+
         'nacitanie priezviska
-        Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "priezvisko", True))
-        Label6.Text = Label4.Text
-        Label4.DataBindings.Clear()
+        'Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OsobaBindingSource2, "priezvisko", True))
+        'Label6.Text = Label4.Text
+        'Label4.DataBindings.Clear()
     End Sub
 
    
@@ -251,5 +254,11 @@
 
     Private Sub OsobaDataGridView_CellDoubleClick1(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles OsobaDataGridView.CellDoubleClick
         osoba_detail.Show()
+    End Sub
+
+    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+        MsgBox(idClen & priezvisko)
     End Sub
 End Class

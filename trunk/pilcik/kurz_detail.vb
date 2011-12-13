@@ -1,5 +1,5 @@
 ﻿Public Class kurz_detail
-    Public id_vybrateho_kurzu As Integer = kurz_novy.Label2.Text
+    Public id_vybrateho_kurzu As Integer = kurz_novy.idKurz
     Private Sub kurz_detail_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.osobaClenoviaKurzu' table. You can move, or remove it, as needed.
         Me.OsobaClenoviaKurzuTableAdapter.Fill(Me.Pilcik_dbDataSet.osobaClenoviaKurzu, id_vybrateho_kurzu)
@@ -18,7 +18,7 @@
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz_id' table. You can move, or remove it, as needed.
         Me.Kurz_idTableAdapter.FillBy_id(Me.Pilcik_dbDataSet.kurz_id, id_vybrateho_kurzu)
 
-        Label4.Text = kurz_novy.Label2.Text
+        'Label4.Text = kurz_novy.Label2.Text
 
         Label1.BringToFront()
         'If TypTextBox.Text = "" Then

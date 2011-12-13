@@ -1,6 +1,6 @@
 ﻿Public Class tlacove_zostavy
-    'Public id_kurzu As Integer = ComboBox1.SelectedValue
-    Public textPila As String = "Pila"
+
+
     Private Sub tlacove_zostavy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.kurz_pohlad' table. You can move, or remove it, as needed.
         Me.Kurz_pohladTableAdapter.Fill(Me.Pilcik_dbDataSet.kurz_pohlad)
@@ -14,45 +14,14 @@
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        
+   
 
-
-    End Sub
-
-    Private Sub protokolCheckBox_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        
-    End Sub
-
-    Private Sub protokol_kurzComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub RadioButton1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        
-
-
-    End Sub
-
-    Private Sub protokol_lkt_RadioButton_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        
-    End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         tz_protokol_lkt.Show()
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pilaRadioButton.CheckedChanged
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
-    End Sub
+ 
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         If ComboBox1.SelectedValue <> Nothing Then
@@ -70,4 +39,6 @@
         End If
         'MsgBox(ComboBox1.SelectedValue)
     End Sub
+
+   
 End Class

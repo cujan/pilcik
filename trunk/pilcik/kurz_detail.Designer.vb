@@ -66,6 +66,10 @@ Partial Class kurz_detail
         Me.miestoKonaniaComboBox = New System.Windows.Forms.ComboBox()
         Me.MiestokonaniaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OsobaClenoviaKurzuDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OsobaClenoviaKurzuBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Kurz_idTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.kurz_idTableAdapter()
@@ -76,10 +80,6 @@ Partial Class kurz_detail
         Me.OsobaClenoviaKurzuTableAdapter = New pilcik.pilcik_dbDataSetTableAdapters.osobaClenoviaKurzuTableAdapter()
         Me.ZmazClenaButton = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         NazovLabel = New System.Windows.Forms.Label()
         Zaciatok_kurzuLabel = New System.Windows.Forms.Label()
         Koniec_kurzuLabel = New System.Windows.Forms.Label()
@@ -275,8 +275,8 @@ Partial Class kurz_detail
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(31, 22)
+        Me.BindingNavigatorCountItem.Text = "z {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
         'BindingNavigatorDeleteItem
@@ -470,12 +470,40 @@ Partial Class kurz_detail
         Me.OsobaClenoviaKurzuDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.OsobaClenoviaKurzuDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5})
         Me.OsobaClenoviaKurzuDataGridView.DataSource = Me.OsobaClenoviaKurzuBindingSource
-        Me.OsobaClenoviaKurzuDataGridView.Location = New System.Drawing.Point(12, 270)
+        Me.OsobaClenoviaKurzuDataGridView.Location = New System.Drawing.Point(12, 299)
         Me.OsobaClenoviaKurzuDataGridView.Name = "OsobaClenoviaKurzuDataGridView"
         Me.OsobaClenoviaKurzuDataGridView.ReadOnly = True
         Me.OsobaClenoviaKurzuDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.OsobaClenoviaKurzuDataGridView.Size = New System.Drawing.Size(1133, 404)
+        Me.OsobaClenoviaKurzuDataGridView.Size = New System.Drawing.Size(1133, 375)
         Me.OsobaClenoviaKurzuDataGridView.TabIndex = 51
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "priezvisko"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Priezvisko"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "meno"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Meno"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "datum_narodenia"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Dátum narodenia"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "cislo_pilcickeho_preukazu"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Číslo pilčíckeho preukazu"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'OsobaClenoviaKurzuBindingSource
         '
@@ -542,34 +570,6 @@ Partial Class kurz_detail
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 55
         Me.Label4.Text = "Label4"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "priezvisko"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Priezvisko"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "meno"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Meno"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "datum_narodenia"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Dátum narodenia"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "cislo_pilcickeho_preukazu"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Číslo pilčíckeho preukazu"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'kurz_detail
         '

@@ -1,6 +1,7 @@
 ﻿Public Class kurz_novy
 
-    
+    Public idKurz As Integer = -1
+    Public nazovKurzu As String = String.Empty
 
     Private Sub kurz_novy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Pilcik_dbDataSet.miesto_konania' table. You can move, or remove it, as needed.
@@ -100,14 +101,14 @@
     
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim nazov As String = Label4.Text
-        If Label4.Text <> "" Then
-            If MsgBox("Naozaj chcete zmazať vybraný kurz - " + nazov + " ? Bude zmazany aj v prehľade jednotlivých členov.", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+
+        If nazovKurzu <> String.Empty Then
+            If MsgBox("Naozaj chcete zmazať vybraný kurz - " + nazovKurzu + " ? Bude zmazany aj v prehľade jednotlivých členov.", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
                 Dim con As New OleDbConnection(pripojovaci_retazec)
                 Dim com As New OleDbCommand("DELETE FROM kurz WHERE id = @id", con)
                 Dim com1 As New OleDbCommand("DELETE FROM clenovia_kurzu WHERE kurz_id = @id", con)
-                com.Parameters.AddWithValue("id", Label2.Text)
-                com1.Parameters.AddWithValue("id", Label2.Text)
+                com.Parameters.AddWithValue("id", idKurz)
+                com1.Parameters.AddWithValue("id", idKurz)
                 con.Open()
                 com.ExecuteNonQuery()
                 com1.ExecuteNonQuery()
@@ -129,27 +130,13 @@
         pomocny.Show()
     End Sub
 
-    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
-        Label2.Text = Label1.Text
-        Label1.DataBindings.Clear()
-    End Sub
-
-    Private Sub KurzDataGridView_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellClick
-        Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KurzBindingSource, "id", True))
-        Label2.Text = Label1.Text
-        Label1.DataBindings.Clear()
-
-        Label4.DataBindings.Add(New Binding("Text", Me.KurzBindingSource, "nazov kurzu", True))
-        Label5.Text = Label4.Text
-        Label4.DataBindings.Clear()
-    End Sub
-
-   
-
     
- 
-    Private Sub KurzDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellContentClick
+    Private Sub KurzDataGridView_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles KurzDataGridView.CellClick
+        'nastavenie id kurzu
+        idKurz = Me.KurzBindingSource.Current("id")
+
+        'nastavenie nazvu kurzu
+        nazovKurzu = Me.KurzBindingSource.Current("nazov kurzu")
 
     End Sub
 
