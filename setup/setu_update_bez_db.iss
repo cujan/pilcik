@@ -20,13 +20,14 @@ OutputDir=D:\pilcik\setup
 OutputBaseFilename=setup_update
 Compression=lzma/Max
 SolidCompression=true
-DisableWelcomePage=true
+;DisableWelcomePage=true
 DisableFinishedPage=true
 AllowCancelDuringInstall=false
 CreateAppDir=true
 DisableProgramGroupPage=yes
 DisableReadyPage=true
 PrivilegesRequired=none
+UsePreviousAppDir=False
 
 [Languages]
 Name: "slovak"; MessagesFile: "compiler:Languages\Slovak.isl"

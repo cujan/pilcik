@@ -1160,6 +1160,10 @@ v zmysle vyhl. č. 46/2010 Zz.
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <RepeatColumnHeaders>true</RepeatColumnHeaders>
+        <RepeatRowHeaders>true</RepeatRowHeaders>
+        <FixedColumnHeaders>true</FixedColumnHeaders>
+        <FixedRowHeaders>true</FixedRowHeaders>
         <DataSetName>osobaClenoviaKurzu</DataSetName>
         <Top>15.218cm</Top>
         <Left>1.6197cm</Left>
@@ -1197,7 +1201,7 @@ v zmysle vyhl. č. 46/2010 Zz.
         </Style>
       </Line>
     </ReportItems>
-    <Height>16.89513cm</Height>
+    <Height>16.7893cm</Height>
     <Style />
   </Body>
   <Width>20.48917cm</Width>
@@ -1244,6 +1248,51 @@ v zmysle vyhl. č. 46/2010 Zz.
         </Border>
       </Style>
     </PageHeader>
+    <PageFooter>
+      <Height>1.02661cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox5">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>H&amp;K Software Solutions</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox5</rd:DefaultName>
+          <Top>0.42661cm</Top>
+          <Left>3.01485cm</Left>
+          <Height>0.6cm</Height>
+          <Width>13.46507cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <InteractiveHeight>11in</InteractiveHeight>
