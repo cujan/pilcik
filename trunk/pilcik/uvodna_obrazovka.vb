@@ -98,4 +98,8 @@ Public Class uvodna_obrazovka
         Dim currentVersion As String = My.Application.Info.Version.ToString
         MsgBox(currentVersion)
     End Sub
+
+    Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
+
+    End Sub
 End Class

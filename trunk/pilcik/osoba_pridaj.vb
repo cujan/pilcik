@@ -256,7 +256,7 @@
         osoba_detail.Show()
     End Sub
 
-    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
         MsgBox(idClen & priezvisko)
